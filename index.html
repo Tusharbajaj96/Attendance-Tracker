@@ -1,36 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
 </head>
-
 <body>
     <header>
         <div class="nav-brand">
-            <img src="a simple modern design with a white background and a small colored icon logo for Academix.png"
+            <img src="images/a simple modern design with a white background and a small colored icon logo for Academix.png"
                 alt="img" class="logo">
             Academix
         </div>
 
         <h4>Menu</h4>
         <div class="nav-container">
-        <div class="nav-item"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="nav-item"><i class="fa-solid fa-user"></i><span>Student Profile</span><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="nav-item"> <i class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="nav-item"><i class="fa-solid fa-chart-bar"></i><span>Improvement</span><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="nav-item"> <i class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="nav-item"><i class="fa-solid fa-sign-out-alt"></i><span>Log Out</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='index.html'"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='pages/student.html'"><i class="fa-solid fa-user"></i><span>Student Profile</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='pages/mentor.html'"><i class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='pages/attendence.html'"><i class="fa-solid fa-chart-bar"></i><span>Attendance</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='pages/settings.html'"> <i class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='pages/logout.html'"><i class="fa-solid fa-sign-out-alt"></i><span>Log Out</span><i class="fa-solid fa-arrow-right"></i></div>
         </div>
     </header>
+    
+    <main>
+    <div class="head">
+        <div class="menu-item">DashBoard <br>
+            <span class="date">18 March, 2025</span>
+        </div>
+        <img src="images/a simple modern design with a white background and a small colored icon logo for Academix.png"
+                alt="img" class="head-logo">
+        <div class="search">
+            <div class="btn"><i class="fas fa-search search-btn"></i></div></i><input type="search"
+                placeholder="Search anything" class="search-box">
+            <div class="voice"><i class="fa-solid fa-microphone voice-btn"></i></div>
+        </div>
+        <div class="person-info">
+            <div class="mode"><i class="fa-regular fa-sun page-mode"></i><i class="fa-solid fa-moon page-mode"></i>
+            </div>
+            <div class="bell-icon"><i class="fa-solid fa-bell"></i></div>
+            <div class="info"><img
+                    src="images/person-logo.jpg"
+                    alt="" class="person-img"> <span class="name">Radhika</span> <br> <span class="status">Web
+                    Developer</span></div>
+        </div>
+    </div> 
+   
+    <section class="student">
+    <div class="student-stats">
+    <div class="student-top">
+        <div class="student-info">
+            <div class="st-head">
+                <div class="heading">
+                    <span>Student</span>
+                </div>
+                <div class="edit-icon">
+                    <div class="icon"><i class="fa fa-edit edit"></i></div>
+
+                </div>
+            </div>
+            <div class="exam">
+                <div class="presentation exam-box">
+                    <div class="icon" ><i class="fas fa-lightbulb"
+                           ></i>
+                    </div>
+                    <span class="text">Presentation</span><br>
+                    <span class="sub-text">8/10</span>
+                </div>
+                <div class="examination exam-box">
+                    <div class="icon"><i class="fas fa-book"
+                           ></i></div>
+                    <span class="text">Examination</span><br>
+                    <span class="sub-text">3/10</span>
+                </div>
+                <div class="report exam-box">
+                    <div class="icon"><i class="fas fa-file-alt"
+                            ></i></div>
+                    <span class="text">Reports</span><br>
+                    <span class="sub-text">6/15</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    </main>
 </body>
