@@ -13,9 +13,9 @@ header {
     background-color: rgb(252, 255, 255);
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 15%;
     height: 100vh;
-    position: sticky;
+    position: fixed;
 }
 
 .nav-brand {
@@ -57,7 +57,9 @@ header h4 {
     background-color: transparent;
     margin: 0 3px;
 }
-
+.head-logo{
+    display: none;
+}
 .fa-arrow-right {
     opacity: 0;
     margin-right: 5px;
@@ -68,15 +70,222 @@ header h4 {
 .nav-item:hover .fa-arrow-right {
     opacity: 1;
 }
+.head {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid darkgray;
+    background-color: rgb(250, 248, 248);
+}
 
+main {
+    flex-grow: 1;
+    margin-left: 15%;
+
+}
+
+.menu-item {
+    margin: 0 1.5vw;
+    font-weight: 400;
+    font-size: 1.2vw;
+    width: 10%;
+}
+
+.date {
+    font-size: 1vw;
+    color: rgb(154, 153, 153);
+}
+
+.person-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 0 30px;
+}
+
+.mode {
+    background-color: white;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.page-mode {
+    margin: 10px 9px;
+
+}
+
+.bell-icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.status {
+    font-size: 11px;
+    color: rgb(154, 153, 153);
+    margin-left: 38px;
+    position: relative;
+    top: -20px;
+}
+
+.person-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    transform: translateY(5px);
+    margin-left: 3px;
+}
+
+.info {
+    width: 160px;
+    margin-top: 10px;
+    background-color: white;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.name {
+    font-size: 14px;
+    position: relative;
+    top: -10px;
+}
+
+.search {
+    width: 40%;
+    display: flex;
+
+}
+
+.search-box {
+    height: 40px;
+    width: 80%;
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 0 35px;
+
+}
+
+.btn {
+    position: relative;
+    right: -33px;
+    margin-top: 5px;
+    width: 31px;
+    height: 30px;
+    border-radius: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.voice {
+    margin: 5px 10px;
+    width: 40px;
+    border-radius: 50rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+}
+.head-logo{
+    display: none;
+}
+.student{
+    display: flex;
+    height: auto;
+}
+.student-top{
+    height: auto;
+    display: flex;
+
+}
+.student-info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    
+}
+.st-head{
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+
+    margin: 20px 30px;
+}
+.student-stats{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.edit-icon{
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 10px;
+}
+.icon{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exam{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.exam-box{
+    width: 30%;
+    height: 150px;
+    border-radius: 15px;
+    background-color: white;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50rem;
+    background-color: white;
+    margin: 15px;
+}
+
+.text{
+    margin: 80px 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sub-text{
+    margin: 20px 15px;
+}
 @media (max-width: 1035px) {
-    .nav-item i{
+    .nav-item i {
         font-size: 1vw;
     }
-    .nav-item{
+
+    .nav-item {
         font-size: 1vw;
     }
-    .nav-brand{
+
+    .nav-brand {
         font-size: 2vw;
     }
 }
@@ -87,12 +296,13 @@ header h4 {
         bottom: 0;
         width: 100%;
         height: 60px;
+        z-index: 1000;
     }
 
     header .nav-container {
-        display: flex;  
-        justify-content: space-around;  
-        align-items: center;  
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         width: 100%;
         height: 100%;
     }
@@ -110,21 +320,117 @@ header h4 {
     }
 
     .fa-arrow-right {
-        display: none; 
+        display: none;
     }
 
-    .nav-brand, header h4 {
+    .nav-brand,
+    header h4 {
         display: none;
     }
 
     .nav-item i {
-        font-size: 24px; 
+        font-size:24px;
     }
-    .nav-item:hover .fa-arrow-right{
+
+    .nav-item:hover .fa-arrow-right {
         opacity: 0;
-}
-    .nav-item:hover{
+    }
+
+    .nav-item:hover {
         background-color: transparent;
         cursor: default;
+    }
+    .menu-item {
+        display: none;
+    }
+    .head-logo{
+        display: block;
+        margin-left: 2%;
+        font-size: 1.6vw;
+        margin-bottom: 1%;
+        width: 6%;
+        background-color: transparent;
+        margin: 0 3px;
+        aspect-ratio: 1/1;
+    }
+    main{
+        margin-left: 0;
+    }
+}
+@media (max-width:665px) {
+    .head{
+        justify-content: flex-end;
+    }
+    .mode{
+        display: none;
+    }
+    .search-box{
+        display: none;
+    }
+    .btn{
+        background-color: transparent;
+        top: 5px;
+        left: 25px;
+
+    }
+    .voice{
+        background-color: transparent;
+        position: relative;
+        right: -2vw;
+    }
+    .person-info{
+        justify-content: flex-end;
+        width: 30%;
+        margin-left: 0;
+        
+    }
+    .bell-icon{
+        margin-right: 5px;
+        background-color: transparent;
+        margin-top: 2px;
+    }
+    .head-logo{
+        position: relative;
+        left: 0;
+    }
+    .search{
+        justify-content: flex-end;
+        margin-left: 15vw;
+    }
+}
+@media (max-width:500px) {
+    .status{
+        display: none;
+    }
+    .name{
+        top: -5px;
+    }
+    .head-logo{
+        width: 8%;
+    }
+}
+@media (max-width: 395px) {
+    .name{
+        display: none;
+    }
+    .info{
+        width: 37px;
+        background-color: transparent;
+        margin-top: 6px;
+    }
+    .person-info{
+        width: 20%;
+    }
+    .search{
+        margin-left: 15vw;
+    }
+    .voice{
+        right: -5vw;
+    }
+    .btn{
+        left:32px;
+    }
+    .head-logo{
+        width: 10%;
     }
 }
