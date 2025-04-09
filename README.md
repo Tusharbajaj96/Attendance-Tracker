@@ -40,3 +40,8 @@ A modern, responsive web-based Attendance Tracker designed for students, mentors
 - Raima Dhingra
 - Pooja Kanwar
 - Simranpreet Kaur
+## 📬 Contact
+
+For any questions or feedback, feel free to open an issue on this repository or contact me directly.
+
+- (https://github.com/Tusharbajaj96)
