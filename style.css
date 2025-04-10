@@ -5,13 +5,15 @@
 }
 
 .left {
-    display: flex;
-    position: relative;
-    border: 2px solid rgb(146, 137, 137);
+    /* display: flex;
+    position: relative; */
+    /* border: 2px solid rgb(146, 137, 137); */
     border-radius: 20px;
     height: 350px;
     width: 25%;
     margin: 5rem 1rem 0rem 2rem;
+    /* background-color: rgb(240, 179, 73) */
+    background-color: #ffffff;
 }
 
 .left h1 {
@@ -31,7 +33,7 @@
 .left h3 {
     font-size: 17.5px;
     margin: 16.2rem 0rem 0rem -13.8rem;
-    background-color: rgb(236, 228, 228);
+    background-color: orange;
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     height: 7.5%;
@@ -51,22 +53,24 @@
     border-radius: 50%;
 }
 
-.profile-icon {
+/* .profile-icon {
     margin: 3.9rem 0rem 0rem -15.5rem;
-}
+} */
 
 .right {
-    border: 2px solid rgb(146, 139, 139);
+    /* border: 2px solid rgb(146, 139, 139); */
     height: 350px;
     width: 75%;
     margin: 5rem 0px 0px -0rem;
     border-radius: 20px;
     font-family: "Poppins", sans-serif;
+    background-color: #f9fafb;
+    margin-right: 20px;
 }
 
 p {
     font-family: "Poppins", sans-serif;
-    color: rgb(81, 148, 81);
+    color: #111827;
     font-style: initial;
     font-size: 20.5px;
     margin: 3px 0px 0px 6px;
@@ -87,19 +91,16 @@ button:hover {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
-    margin: 12px;
-
+    margin: 13.5px;
+    font-size: 0.8vw;
 
 }
 
 .label {
     font-weight: 600;
-    color: #2b2929;
+    color: #555;
     margin-right: 35px;
     white-space: nowrap;
-    font-size: 18px;
-
     min-width: 100px;
 }
 
@@ -109,7 +110,7 @@ button:hover {
 
 }
 
-.right {
+.st-details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px 24px;
@@ -121,21 +122,133 @@ button:hover {
 }
 
 .edit-btn {
-    position: absolute;
-    top: 98.5px;
-    right: 30px;
     padding: 6px 12px;
-    background-color: rgb(236, 228, 228);
+    background-color: rgba(4, 154, 49, 0.6);
     font-family: "Poppins", sans-serif;
     font-weight: normal;
-    height: 5%;
-    width: 3%;
-    border-radius: 5%;
-    font-size: 18px;
+    height: 25px;
+    width: 10%;
+    border-radius: 20px;
+    font-size: 0.7vw;
     cursor: pointer;
     color: black;
+    transition: all 0.3s;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.edit-btn i {
+    margin-right: 3px;
+    font-size: 1vw;
 }
 
 .edit-btn:hover {
-    background-color: #7a6e6e;
+    background-color: rgba(4, 154, 49, 0.8);
+}
+
+main {
+    background-color: #e5e7eb;
+    height: 100vh;
+}
+
+.st-h {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+    margin: 20px;
+}
+
+.st-right {
+    display: flex;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(229, 182, 95, 0.4);
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-d {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(229, 182, 95, 0.8);
+}
+
+.st-img {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.st-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgb(201, 199, 199);
+}
+
+.st-info {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.b-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.b-text {
+    background-color: rgba(17, 136, 54, 0.4);
+    padding: 10px;
+}
+.edit-div{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+@media (max-width:1188px) {
+    .edit-div{
+        height: 30px;
+        justify-content: flex-start;
+    }
+
+}
+@media (max-width:1024px) {
+    .one{
+        flex-wrap: wrap;
+    }
+    main{
+        height: auto;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        margin-left: 30px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .edit-div{
+        margin-left: 130px;
+        height: 50px;
+    }
+    .edit-btn{
+        height: 40px;
+        font-size: 1.3vw;
+    }
+    .row{
+        font-size: 1.1vw;
+    }
 }
