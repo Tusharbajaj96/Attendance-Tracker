@@ -72,25 +72,73 @@
             </div>
             <div class="exam">
                 <div class="presentation exam-box">
-                    <div class="icon" ><i class="fas fa-lightbulb"
-                           ></i>
+                    <div class="icon" style="background-color: orange;" ><i class="fas fa-lightbulb"
+                        style="color: white;" ></i>
                     </div>
                     <span class="text">Presentation</span><br>
                     <span class="sub-text">8/10</span>
                 </div>
                 <div class="examination exam-box">
-                    <div class="icon"><i class="fas fa-book"
-                           ></i></div>
+                    <div class="icon" style="background-color: rgb(5, 112, 5);"><i class="fas fa-book"
+                        style="color: white;" ></i></div>
                     <span class="text">Examination</span><br>
                     <span class="sub-text">3/10</span>
                 </div>
                 <div class="report exam-box">
-                    <div class="icon"><i class="fas fa-file-alt"
-                            ></i></div>
+                    <div class="icon" style="background-color: black;"><i class="fas fa-file-alt"
+                        style="color: white;" ></i></div>
                     <span class="text">Reports</span><br>
                     <span class="sub-text">6/15</span>
                 </div>
             </div>
+        </div>
+        <div class="course">
+            <div class="upper-course">
+                <span class="course-text">Course Statistics</span>
+                <div class="dot-icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <div class="progress">
+                <span class="course-items">Done</span>
+                <div class="progress-box">
+                <div class="progress-bar">
+                    <div class="act-progress1" style="background-color: orange;">
+
+                    </div>
+                </div>
+                <span class="percent">80%</span>
+            </div>
+            </div>
+            <div class="progress"><span class="course-items">On Progress</span>
+                <div class="progress-box">
+                <div class="progress-bar">
+                    <div class="act-progress2" style="background-color: rgb(19, 97, 19);"></div>
+                </div>
+                <span class="percent">65%</span>
+            </div></div>
+            <div class="progress"><span class="course-items">To Do</span>
+                <div class="progress-box">
+                <div class="progress-bar">
+                    <div class="act-progress3" style="background-color: black;"></div>
+                </div>
+                <span class="percent">50%</span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="attendence">
+        <div class="att-head">
+            <span class="att-heading">Total Attendence Report</span>
+            <div class="marks">
+                <div class="dot1" style="background-color: orange;"></div> <span class="att">Present</span>
+                <div class="dot1" style="background-color: rgb(17, 105, 17);"></div><span
+                    class="att">Absent</span>
+                <div class="calender-icon"><i class="fas fa-calendar" style="color: orange;"></i></div>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="attendanceChart"></canvas>
         </div>
     </div>
     </div>
