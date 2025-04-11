@@ -224,7 +224,7 @@ main {
     margin: 20px 30px;
 }
 .student-stats{
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
@@ -392,6 +392,13 @@ main {
 }
 .progress-box{
     display: flex;
+}
+.course{
+    width: 40%;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 4% 2%;
 }
 @media (max-width: 1035px) {
     .nav-item i {
