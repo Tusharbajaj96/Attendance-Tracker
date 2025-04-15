@@ -200,6 +200,96 @@ main {
 .head-logo{
     display: none;
 }
+.att-head{
+    display: flex;
+
+}
+.sort{
+    margin: 20px;
+}
+.graphs{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+.left-section{
+    width: 40%;
+    margin-right: 20px;
+}
+.circle-g{
+    width: 100%;
+    height: 40vh;
+    background-color:white;
+    border-radius: 15px;
+}
+.calender{
+    width: 60%;
+    height: 70vh;
+    background-color:white;
+    border-radius: 15px;
+}
+.circle-g2{
+    width: 100%;
+    height: 28.5vh;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.circle-g2-h{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.p-a{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    width: 30%;
+    height: 4vh;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+}
+.Total{
+    background-color: orange;
+}
+.pres{
+    background-color: green;
+}
+.abs{
+    background-color: black;
+}
+.percent{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 2vw;
+
+}
+.text{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    margin-left: 20px;
+    color: green;
+}
+#calendar {
+    max-width: 100%;
+  }
+.text-t{
+    font-size: 1vw;
+}
 @media (max-width: 1035px) {
     .nav-item i {
         font-size: 1vw;
@@ -280,6 +370,15 @@ main {
     main{
         margin-left: 0;
     }
+    .text-t{
+        font-size: 1.8vw;
+    }
+    .percent{
+        font-size: 2.6vw;
+    }
+    .percent-t{
+        margin-right: 30px;
+    }
 }
 @media (max-width:665px) {
     .head{
@@ -332,6 +431,12 @@ main {
     .head-logo{
         width: 8%;
     }
+    .percent{
+        font-size: 3vw;
+    }
+    .text-t{
+        font-size: 2.2vw;
+    }
 }
 @media (max-width: 395px) {
     .name{
@@ -358,3 +463,20 @@ main {
         width: 10%;
     }
 }
+@media (max-width:762px) {
+    .graphs{
+        flex-wrap: wrap;
+    }
+    .left-section{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .calender{
+        width: 100%;
+    }
+    main{
+        height: auto;
+    }
+}
+
+  
