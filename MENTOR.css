@@ -279,6 +279,69 @@ main {
     color: black;
     margin-right: 10px;
 }
+.contact-form{
+    background-color:white;
+    width: 45%;
+    height: 250px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.mentor-con{
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-between;
+    margin-right: 8%;
+    
+}
+.contact-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:2px solid lightgrey ;
+    height: 40px;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+.contact-sub{
+    margin-top: 10px;
+}
+.mail-text{
+    margin-left: 10px;
+    font-size: 0.9vw;
+}
+.mail{
+    height: 40px;
+    width: 60%;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.contact-sub textarea{
+    margin: 20px 10px;
+    height: 10vh;
+    width: 74%;
+    border-radius: 5px;
+    padding-left: 10px ;
+    border: 2px solid black;
+}
+.contact-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-btn button{
+    height: 35px;
+    width: 25%;
+    font-size: 1vw;
+    border-radius: 10px;
+    background-color: orange;
+    border: 1px solid orange;
+    position: relative;
+    top: -20px;
+    transition: all 0.3s;
+}
+.contact-btn button:hover{
+    background-color: rgb(251, 201, 107) ;
+    cursor: pointer;
+}
 @media (max-width: 1035px) {
     .nav-item i{
         font-size: 1vw;
@@ -394,7 +457,12 @@ main {
         justify-content: flex-end;
         margin-left: 15vw;
     }
-} 
+    .mentor-con{
+        flex-direction: column;
+    }
+    .contact-form{
+        width:100%;}
+    }
 @media (max-width:605px) {
     .status{
         display: none;
@@ -455,4 +523,13 @@ main {
     main {
         height: auto;
     }
-} 
+    .contact-btn button{
+        font-size: 2vw;
+    }
+    .contact-head{
+        font-size: 2vw;
+    }
+    .mail-text{
+        font-size: 1.8vw;
+    }
+}  
