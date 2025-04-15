@@ -290,6 +290,9 @@ main {
 .text-t{
     font-size: 1vw;
 }
+.p-text{
+    color: white;
+}
 @media (max-width: 1035px) {
     .nav-item i {
         font-size: 1vw;
