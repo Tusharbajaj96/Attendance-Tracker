@@ -329,7 +329,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 80px;
+    margin-right: 20px;
     width: 30px;
     height: 30px;
     border-radius: 50rem;
@@ -348,8 +348,11 @@ main {
 
 .upper-course{
     display: flex;
+    justify-content: space-between;
 }
-
+.course-h{
+    margin: 15px 0 0 10px;
+}
 .progress{
     display: flex;
     height: 40px;
@@ -560,4 +563,20 @@ main {
     .head-logo{
         width: 10%;
     }
+}
+@media (max-width:1300px) {
+    .student-top{
+        flex-wrap: wrap;
+    }
+    .student-info{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .course{
+        width: 100%;
+    }
+    .course-text{
+        margin-right: 29vw;
+    }
+
 }
