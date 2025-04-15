@@ -68,10 +68,12 @@ header h4 {
 .nav-item:hover .fa-arrow-right {
     opacity: 1;
 }
-main{
+
+main {
     height: 100vh;
     width: 100%;
 }
+
 .head {
     width: 100%;
     height: 80px;
@@ -85,8 +87,8 @@ main{
 main {
     flex-grow: 1;
     margin-left: 15%;
-    background-color:rgb(240, 244, 244);
-    
+    background-color: rgb(240, 244, 244);
+
 }
 
 .menu-item {
@@ -200,10 +202,12 @@ main {
     align-items: center;
     aspect-ratio: 1/1;
 }
-.head-logo{
+
+.head-logo {
     display: none;
 }
-.mentor-info{
+
+.mentor-info {
     width: 90%;
     height: 35vh;
     margin: 20px;
@@ -211,123 +215,145 @@ main {
     background-color: white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-.mentor-head{
+
+.mentor-head {
     padding: 10px;
 }
-.info-t{
-    margin:10px;
+
+.info-t {
+    margin: 10px;
     font-size: 26px;
     background-color: transparent;
 }
-.men-img{
+
+.men-img {
     width: 20%;
     border-right: 2px solid lightgrey;
 
 }
-.men-info{
+
+.men-info {
     display: flex;
     flex-direction: column;
     width: 80%;
 
 }
-.data{
+
+.data {
     height: 15vh;
     width: 100%;
     border-bottom: 2px solid lightgrey;
 }
-.img{
+
+.img {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
-.m-img{
+
+.m-img {
     width: 130px;
     aspect-ratio: 1/1;
-    border-radius:50% ;
+    border-radius: 50%;
 }
-.men-name{
+
+.men-name {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.percent{
+
+.percent {
     height: 3px;
     background-color: gray;
     width: 60%;
     margin-top: 10px;
 }
-.p-fill{
+
+.p-fill {
     height: 100%;
     width: 30%;
-    background-color:rgb(58, 122, 58);
+    background-color: rgb(58, 122, 58);
 }
-.m-head{
+
+.m-head {
     margin: 8px 4px;
     font-size: 0.9vw;
     color: #7a7474;
 }
-.m-sub{
-    font-size:0.9vw;
+
+.m-sub {
+    font-size: 0.9vw;
     color: #7a7474;
     margin-right: 5px;
     margin-left: 4px;
 }
-.m-data{
+
+.m-data {
     font-size: 0.9vw;
     color: black;
     margin-right: 10px;
 }
-.contact-form{
-    background-color:white;
+
+.contact-form {
+    background-color: white;
     width: 45%;
     height: 250px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-.mentor-con{
+
+.mentor-con {
     display: flex;
     margin-left: 20px;
     justify-content: space-between;
     margin-right: 8%;
-    
+
 }
-.contact-head{
+
+.contact-head {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom:2px solid lightgrey ;
+    border-bottom: 2px solid lightgrey;
     height: 40px;
     font-weight: 600;
     font-size: 1.5vw;
 }
-.contact-sub{
+
+.contact-sub {
     margin-top: 10px;
 }
-.mail-text{
+
+.mail-text {
     margin-left: 10px;
     font-size: 0.9vw;
 }
-.mail{
+
+.mail {
     height: 40px;
     width: 60%;
     border-radius: 5px;
     border: 2px solid black;
 }
-.contact-sub textarea{
+
+.contact-sub textarea {
     margin: 20px 10px;
     height: 10vh;
     width: 74%;
     border-radius: 5px;
-    padding-left: 10px ;
+    padding-left: 10px;
     border: 2px solid black;
 }
-.contact-btn{
+
+.contact-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contact-btn button{
+
+.contact-btn button {
     height: 35px;
     width: 25%;
     font-size: 1vw;
@@ -338,21 +364,56 @@ main {
     top: -20px;
     transition: all 0.3s;
 }
-.contact-btn button:hover{
-    background-color: rgb(251, 201, 107) ;
+
+.contact-btn button:hover {
+    background-color: rgb(251, 201, 107);
     cursor: pointer;
 }
+
+.st-head {
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    border-bottom: 2px solid lightgrey;
+    height: 40px;
+}
+
+.up-head1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 2vw;
+
+}
+
+.up-head1:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+
+}
+
+.upcoming-events {
+    background-color: white;
+    width: 45%;
+    height: 250px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 1035px) {
-    .nav-item i{
+    .nav-item i {
         font-size: 1vw;
     }
-    .nav-item{
+
+    .nav-item {
         font-size: 1vw;
     }
-    .nav-brand{
+
+    .nav-brand {
         font-size: 2vw;
     }
 }
+
 @media (max-width: 800px) {
     header {
         position: fixed;
@@ -363,9 +424,9 @@ main {
     }
 
     header .nav-container {
-        display: flex;  
-        justify-content: space-around;  
-        align-items: center;  
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         width: 100%;
         height: 100%;
     }
@@ -383,27 +444,32 @@ main {
     }
 
     .fa-arrow-right {
-        display: none; 
+        display: none;
     }
 
-    .nav-brand, header h4 {
+    .nav-brand,
+    header h4 {
         display: none;
     }
 
     .nav-item i {
-        font-size: 24px; 
+        font-size: 24px;
     }
-    .nav-item:hover .fa-arrow-right{
+
+    .nav-item:hover .fa-arrow-right {
         opacity: 0;
-}
-    .nav-item:hover{
+    }
+
+    .nav-item:hover {
         background-color: transparent;
         cursor: default;
     }
+
     .menu-item {
         display: none;
     }
-    .head-logo{
+
+    .head-logo {
         display: block;
         margin-left: 2%;
         font-size: 1.6vw;
@@ -413,123 +479,164 @@ main {
         margin: 0 3px;
         aspect-ratio: 1/1;
     }
-    main{
+
+    main {
         margin-left: 0;
     }
 }
+
 @media (max-width:665px) {
-    .head{
+
+    .head {
         justify-content: flex-end;
     }
-    .mode{
+
+    .mode {
         display: none;
     }
-    .search-box{
+
+    .search-box {
         display: none;
     }
-    .btn{
+
+    .btn {
         background-color: transparent;
         top: 5px;
         left: 25px;
 
     }
-    .voice{
+
+    .voice {
         background-color: transparent;
         position: relative;
         right: -2vw;
     }
-    .person-info{
+
+    .person-info {
         justify-content: flex-end;
         width: 30%;
         margin-left: 0;
-        
+
     }
-    .bell-icon{
+
+    .bell-icon {
         margin-right: 5px;
         background-color: transparent;
         margin-top: 2px;
     }
-    .head-logo{
+
+    .head-logo {
         position: relative;
         left: 0;
     }
-    .search{
+
+    .search {
         justify-content: flex-end;
         margin-left: 15vw;
     }
-    .mentor-con{
+
+    .mentor-con {
         flex-direction: column;
     }
-    .contact-form{
-        width:100%;}
+
+    .contact-form {
+        width: 100%;
     }
+
+    .upcoming-events {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
 @media (max-width:605px) {
-    .status{
+    .status {
         display: none;
     }
-    .name{
+
+    .name {
         top: -5px;
     }
-    .head-logo{
+
+    .head-logo {
         width: 8%;
     }
 }
 
 @media (max-width: 423px) {
-    .name{
+    .name {
         display: none;
     }
-    .info{
+
+    .info {
         width: 37px;
         background-color: transparent;
         margin-top: 6px;
     }
-    .person-info{
+
+    .person-info {
         width: 20%;
     }
-    .search{
+
+    .search {
         margin-left: 15vw;
     }
-    .voice{
+
+    .voice {
         right: -5vw;
     }
-    .btn{
-        left:32px;
+
+    .btn {
+        left: 32px;
     }
-    .head-logo{
+
+    .head-logo {
         width: 10%;
     }
 }
+
 @media (max-width:900px) {
-    .mentor-info{
+    .mentor-info {
         flex-wrap: wrap;
         height: auto;
     }
-    .men-img{
+
+    .men-img {
         width: 100%;
     }
-    .men-info{
+
+    .men-info {
         width: 100%;
     }
-    .m-data{
-        font-size:2vw;
-    }
-    .m-sub{
+
+    .m-data {
         font-size: 2vw;
     }
-    .m-head{
+
+    .m-sub {
         font-size: 2vw;
     }
+
+    .m-head {
+        font-size: 2vw;
+    }
+
     main {
         height: auto;
     }
-    .contact-btn button{
+
+    .contact-btn button {
         font-size: 2vw;
     }
-    .contact-head{
+
+    .contact-head {
         font-size: 2vw;
     }
-    .mail-text{
+
+    .mail-text {
         font-size: 1.8vw;
     }
-}  
+    .up-head1{
+        font-size: 2vw;
+    }
+}
