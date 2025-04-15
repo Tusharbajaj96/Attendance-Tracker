@@ -23,17 +23,17 @@
 
         <h4>Menu</h4>
         <div class="nav-container">
-        <div class="nav-item" onclick="navigateTo('index.html')"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="nav-item" onclick=""><i class="fa-solid fa-user"></i><span>Student Profile</span><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="nav-item" onclick="navigateTo('mentor.html')"><i class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='index.html'"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='student.html'"><i class="fa-solid fa-user"></i><span>Student Profile</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='mentor.html'"><i class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i class="fa-solid fa-arrow-right"></i></div>
         <div class="nav-item" onclick="window.location.href='attendence.html'"><i class="fa-solid fa-chart-bar"></i><span>Attendence</span><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="nav-item" onclick=""> <i class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="nav-item" onclick=""><i class="fa-solid fa-sign-out-alt"></i><span>Log Out</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='settings.html'"> <i class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='logout.html'"><i class="fa-solid fa-sign-out-alt"></i><span>Log Out</span><i class="fa-solid fa-arrow-right"></i></div>
         </div>
 </header>
 <main>
     <div class="head">
-        <div class="menu-item">DashBoard <br>
+        <div class="menu-item">Attendance <br>
             <span class="date">18 March, 2025</span>
         </div>
         <img src="/images/a simple modern design with a white background and a small colored icon logo for Academix.png"
@@ -53,6 +53,54 @@
                     Developer</span></div>
         </div>
     </div>
+    <div class="attendence-stats">
+        <div class="att-head">
+            <div class="sort">
+                <span class="sort-t">Sort by:</span>
+                <select name="sort" id="sort">
+                    <option value=""disabled selected style="display: none;"></option>
+                    <option value="day">Day</option>
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                </select>
+            </div>
+            <div class="sort">
+                <span class="sort-t">Course Name:</span>
+                <select name="sort" id="sort">
+                <option value=""disabled selected style="display: none;"></option>
+                <option value="C">C Programming</option>
+                <option value="mcp">Modern Computation and Physics</option>
+                <option value="det">DE&T</option>
+                <option value="scm">Source Code Management</option>
+                </select>
+            </div>
+        </div>
+        <div class="graphs">
+            <div class="left-section">
+            <div class="circle-g">
+                <canvas id="donutChart"></canvas>
+            </div>
+            <div class="circle-g2">
+                <div class="circle-g2-h"><span class="c-name">Course Name: </span><span class="course"></span></div>
+                <div class="p-a">
+                    <div class="Total box"><span class="p-text Total">Total: 13</span></div>
+                    <div class="pres box"><span class="p-text pres">Present: 10</span></div>
+                    <div class="abs box"><span class="p-text abs">Absent: 3</span></div>
+                </div>
+                <div class="percent">
+                        <span class="percent-t">Total Percentage: 76.93%</span>
+                </div>
+                <div class="text">
+                    <span class="text-t">You can't miss the class now!</span>
+                </div>
+            </div>
+            </div>
+            <div class="calender">
+                <div id="calendar"></div>
+            </div>
+        </div>
+    </div>
+
 </main>
 </body>
 </html>
