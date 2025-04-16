@@ -403,6 +403,37 @@ main {
     border-radius: 15px;
     margin: 4% 2%;
 }
+.schedule{
+    background-color: rgb(238, 236, 236);
+    width: 30%;
+    
+}
+.c-schedule{
+    width: 90%;
+    height: 400px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+.schedule-head{
+    display: flex;
+    justify-content: space-between;
+}
+.schedule-heading{
+    font-size: 24px;
+}
+.c-head{
+    margin: 15px;
+}
+
+.course-icon{
+    margin: 15px;
+}
+.c-sub{
+    font-size: 10px;
+    color: rgb(201, 197, 197);
+}
 @media (max-width: 1035px) {
     .nav-item i {
         font-size: 1vw;
@@ -578,5 +609,7 @@ main {
     .course-text{
         margin-right: 29vw;
     }
-
+    .schedule{
+        width: 30vw;
+    }
 }
