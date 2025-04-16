@@ -495,6 +495,30 @@ main {
     .nav-brand {
         font-size: 2vw;
     }
+    .student{
+        flex-wrap: wrap;
+    }
+    .schedule{
+        width: 100%;
+        display: flex;
+        height: auto;
+    }
+    .student-stats{
+        height: 70%;
+        width: 100% !important;
+    }
+    .schedule{
+        width: 100% !important;
+        background-color: transparent !important;
+        flex-wrap: wrap;
+    }
+    .c-schedule{
+        width: 100% !important;
+        height: 40vh !important;
+    }
+    .upcoming{
+        width: 100% !important;
+    }
 }
 @media (max-width: 800px) {
     header {
@@ -617,6 +641,9 @@ main {
     }
     .attendence{
         height: 60vh;
+    }
+    .c-schedule{
+        height: 45vh !important;
     }
 }
 @media (max-width: 395px) {
