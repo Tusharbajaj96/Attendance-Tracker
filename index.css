@@ -434,6 +434,55 @@ main {
     font-size: 10px;
     color: rgb(201, 197, 197);
 }
+.upcoming{
+    width: 90%;
+    height: 200px;
+    background-image: url(/images/WhatsApp\ Image\ 2025-03-24\ at\ 20.44.32_2b2903a4.jpg);
+    border-radius: 15px;
+    margin: 20px;
+    background-size: cover;
+    color: white;
+}
+.up-head{
+    display: flex;
+    justify-content: space-between;
+}
+.up-para{
+    margin: 0 15px;
+}
+.up-text{
+    font-size: 12px;
+    
+}
+.up-time-date{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.time{
+    background-color: white;
+    width: 100px;
+    height: 25px;
+    color: black;
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 5px;
+    
+}
+.learn{
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.time i{
+    margin-right:8px ;
+    color: orange;
+}
 @media (max-width: 1035px) {
     .nav-item i {
         font-size: 1vw;
