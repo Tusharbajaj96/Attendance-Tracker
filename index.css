@@ -224,7 +224,7 @@ main {
     margin: 20px 30px;
 }
 .student-stats{
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
@@ -403,6 +403,86 @@ main {
     border-radius: 15px;
     margin: 4% 2%;
 }
+.schedule{
+    background-color: rgb(238, 236, 236);
+    width: 30%;
+    
+}
+.c-schedule{
+    width: 90%;
+    height: 400px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+.schedule-head{
+    display: flex;
+    justify-content: space-between;
+}
+.schedule-heading{
+    font-size: 24px;
+}
+.c-head{
+    margin: 15px;
+}
+
+.course-icon{
+    margin: 15px;
+}
+.c-sub{
+    font-size: 10px;
+    color: rgb(201, 197, 197);
+}
+.upcoming{
+    width: 90%;
+    height: 200px;
+    background-image: url(/images/WhatsApp\ Image\ 2025-03-24\ at\ 20.44.32_2b2903a4.jpg);
+    border-radius: 15px;
+    margin: 20px;
+    background-size: cover;
+    color: white;
+}
+.up-head{
+    display: flex;
+    justify-content: space-between;
+}
+.up-para{
+    margin: 0 15px;
+}
+.up-text{
+    font-size: 12px;
+    
+}
+.up-time-date{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.time{
+    background-color: white;
+    width: 100px;
+    height: 25px;
+    color: black;
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 5px;
+    
+}
+.learn{
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.time i{
+    margin-right:8px ;
+    color: orange;
+}
 @media (max-width: 1035px) {
     .nav-item i {
         font-size: 1vw;
@@ -414,6 +494,30 @@ main {
 
     .nav-brand {
         font-size: 2vw;
+    }
+    .student{
+        flex-wrap: wrap;
+    }
+    .schedule{
+        width: 100%;
+        display: flex;
+        height: auto;
+    }
+    .student-stats{
+        height: 70%;
+        width: 100% !important;
+    }
+    .schedule{
+        width: 100% !important;
+        background-color: transparent !important;
+        flex-wrap: wrap;
+    }
+    .c-schedule{
+        width: 100% !important;
+        height: 40vh !important;
+    }
+    .upcoming{
+        width: 100% !important;
     }
 }
 @media (max-width: 800px) {
@@ -538,6 +642,9 @@ main {
     .attendence{
         height: 60vh;
     }
+    .c-schedule{
+        height: 45vh !important;
+    }
 }
 @media (max-width: 395px) {
     .name{
@@ -578,5 +685,7 @@ main {
     .course-text{
         margin-right: 29vw;
     }
-
+    .schedule{
+        width: 30vw;
+    }
 }
