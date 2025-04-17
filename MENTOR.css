@@ -387,6 +387,24 @@ main {
     border-bottom: 2px solid lightgrey;
     height: 40px;
 }
+.query-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.query-btn button{
+    height: 35px;
+    width: 25%;
+    font-size: 1vw;
+    border-radius: 10px;
+    background-color: orange;
+    border: 1px solid orange;
+    transition: all 0.3s;
+}
+.query-btn button:hover{
+    background-color: rgb(248, 199, 106);
+    cursor: pointer;
+}
 
 .up-head1 {
     display: flex;
