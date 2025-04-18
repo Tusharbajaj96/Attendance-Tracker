@@ -287,12 +287,16 @@ hr {
 
 .set-h button {
     margin: 10px;
-    background-color: rgb(242, 236, 236);
+    background-color: black;
     color: white;
-    width: 70%;
-    height: 60px;
+    width: 20%;
+    height: 40px;
     border-radius: 10px;
     border: transparent;
+    transition: all 0.3s;
+}
+.set-h button:hover{
+    background-color: rgb(117, 115, 115);
 }
 @media (max-width: 800px) {
     header {
