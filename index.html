@@ -13,9 +13,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
 </head>
 <body>
+  
     <header>
         <div class="nav-brand">
             <img src="images/a simple modern design with a white background and a small colored icon logo for Academix.png"
@@ -28,9 +28,9 @@
         <div class="nav-item" onclick="window.location.href='index.html'"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span><i class="fa-solid fa-arrow-right"></i></div>
         <div class="nav-item" onclick="window.location.href='pages/student.html'"><i class="fa-solid fa-user"></i><span>Student Profile</span><i class="fa-solid fa-arrow-right"></i></div>
         <div class="nav-item" onclick="window.location.href='pages/mentor.html'"><i class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="nav-item" onclick="window.location.href='pages/attendence.html'"><i class="fa-solid fa-chart-bar"></i><span>Attendance</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item" onclick="window.location.href='pages/attendence.html'"><i class="fa-solid fa-chart-bar"></i><span>Attendence</span><i class="fa-solid fa-arrow-right"></i></div>
         <div class="nav-item" onclick="window.location.href='pages/settings.html'"> <i class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="nav-item" onclick="window.location.href='pages/logout.html'"><i class="fa-solid fa-sign-out-alt"></i><span>Log Out</span><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="nav-item logout"><i class="fa-solid fa-sign-out-alt"></i><span>Log Out</span><i class="fa-solid fa-arrow-right"></i></div>
         </div>
     </header>
     
@@ -47,16 +47,20 @@
             <div class="voice"><i class="fa-solid fa-microphone voice-btn"></i></div>
         </div>
         <div class="person-info">
-            <div class="mode"><i class="fa-regular fa-sun page-mode"></i><i class="fa-solid fa-moon page-mode"></i>
+            <div class="mode" onclick="toggleTheme()"><i class="fa-regular fa-sun page-mode"></i><i class="fa-solid fa-moon page-mode"></i>
             </div>
-            <div class="bell-icon"><i class="fa-solid fa-bell"></i></div>
+            <div class="bell-icon" id="bell-box"><i class="fa-solid fa-bell"></i></div>
             <div class="info"><img
                     src="images/person-logo.jpg"
                     alt="" class="person-img"> <span class="name">Radhika</span> <br> <span class="status">Web
                     Developer</span></div>
         </div>
     </div> 
-   
+    <div class="notification-box" id="notify-box">
+        <p>There is an event at 2:00 PM</p>
+        <p>There is an event at 2:00 PM</p>
+        <p>There is an event at 2:00 PM</p>
+    </div>
     <section class="student">
     <div class="student-stats">
     <div class="student-top">
@@ -72,21 +76,21 @@
             </div>
             <div class="exam">
                 <div class="presentation exam-box">
-                    <div class="icon" style="background-color: orange;" ><i class="fas fa-lightbulb"
-                        style="color: white;" ></i>
+                    <div class="icon" style="background-color: orange;"><i class="fas fa-lightbulb"
+                            style="color: white;"></i>
                     </div>
                     <span class="text">Presentation</span><br>
                     <span class="sub-text">8/10</span>
                 </div>
                 <div class="examination exam-box">
                     <div class="icon" style="background-color: rgb(5, 112, 5);"><i class="fas fa-book"
-                        style="color: white;" ></i></div>
+                            style="color: white;"></i></div>
                     <span class="text">Examination</span><br>
                     <span class="sub-text">3/10</span>
                 </div>
                 <div class="report exam-box">
                     <div class="icon" style="background-color: black;"><i class="fas fa-file-alt"
-                        style="color: white;" ></i></div>
+                            style="color: white;"></i></div>
                     <span class="text">Reports</span><br>
                     <span class="sub-text">6/15</span>
                 </div>
@@ -94,35 +98,46 @@
         </div>
         <div class="course">
             <div class="upper-course">
-                <div class="course-h"><span class="course-text">Course Statistics</span></div>
-                <div class="dot-icon">
+                <span class="course-text">Course Statistics</span>
+                <div class="dot-icon course-dropdown-toggle" onclick="toggleCourseDropdown(event)">
                     <i class="fas fa-ellipsis-h"></i>
-                </div>
+                    <div id="courseDropdown" class="calendar">
+                      <label for="courseSelect">Select Course:</label><br />
+                      <select id="courseSelect" onchange="onCourseChange()" style="margin-top: 5px;">
+                        <option value="math">DE&T</option>
+                        <option value="os">Operating System</option>
+                        <option value="physics">MCP</option>
+                        <option value="c">C Programming</option>
+                      </select>
+                    </div>
+                  </div>                  
             </div>
+           
             <div class="progress">
                 <span class="course-items">Done</span>
                 <div class="progress-box">
                 <div class="progress-bar">
-                    <div class="act-progress1" style="background-color: orange;">
+                    <div class="act-progress1" style="background-color: orange;" id="doneProgress">
 
                     </div>
                 </div>
-                <span class="percent">80%</span>
+                <span class="percent" id="donePercent">80%</span>
             </div>
             </div>
             <div class="progress"><span class="course-items">On Progress</span>
                 <div class="progress-box">
                 <div class="progress-bar">
-                    <div class="act-progress2" style="background-color: rgb(19, 97, 19);"></div>
+                    <div class="act-progress2" id="onProgress" style="background-color: rgb(19, 97, 19);"></div>
                 </div>
-                <span class="percent">65%</span>
+                <span class="percent" id="onPercent">65%</span>
             </div></div>
             <div class="progress"><span class="course-items">To Do</span>
                 <div class="progress-box">
                 <div class="progress-bar">
-                    <div class="act-progress3" style="background-color: black;"></div>
+                    <div class="act-progress3" id="todoProgress"
+                    style="background-color: black;"></div>
                 </div>
-                <span class="percent">50%</span>
+                <span class="percent" id="todoPercent">50%</span>
             </div>
             </div>
         </div>
@@ -148,19 +163,34 @@
                 <div class="c-head"><span class="schedule-heading">Course Schedule</span><br>
                     <p class="c-sub" id="scheduleSub">Here's your schedule activity for today</p>
                 </div>
-                <div class="dot-icon course-icon"><i class="fas fa-ellipsis-h"></i></div>
-               
+                <div class="dot-icon course-icon" onclick="toggleDropdown()"><i class="fas fa-ellipsis-h"></i></div>
+                <div id="calendarDropdown" class="calendar">
+                    <label for="daySelect">Select a day:</label><br />
+      <select id="daySelect" onchange="updateDaySchedule()">
+        <option value="">--Choose Day--</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+                  </div>
             </div>
-
+            <ul id="scheduleList" class="schedule-list"></ul>
         </div>
         <div class="upcoming">
-            <div class="up-head"><span class="course-text">Upcoming Course</span><button class="learn">Learn
+            <div class="up-head"><div class="up-head-l"><span class="course-text">Upcoming Course</span>
+                </div><div class="up-head-r"><button class="learn" data-bs-toggle="modal" data-bs-target="#Coursedata" type="button">Learn
                     More</button></div>
+
+                </div>
             <div class="up-para">
                 <h5>UI/UX design</h5>
                 <p class="up-text">
                     The course helps you create modern user interface designs focusing on visually appealing
-                    layouts. Registrations are Open.
+                    layouts
                 </p>
             </div>
             <div class="up-time-date">
@@ -172,4 +202,51 @@
     </div>
     </section>
     </main>
+    <div class="modal fade" id="CourseData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h2>UI/UX Design Fundamentals</h2>
+
+                <p><strong>Duration:</strong> 8 Weeks | 3 Hours/Week<br>
+                   <strong>Mode:</strong> Online (Live + Recorded Sessions)</p>
+              
+                <hr>
+              
+                <p><strong>Course Description:</strong><br>
+                  This course introduces the essential principles of User Interface (UI) and User Experience (UX) design. You'll learn to create user-friendly, visually appealing, and intuitive digital experiences using industry tools.
+                </p>
+              
+                <p><strong>What You'll Learn:</strong></p>
+                <ul>
+                  <li>Basics of UI/UX and human-centered design</li>
+                  <li>Wireframing, prototyping, and building user flows</li>
+                  <li>Using tools like Figma, Adobe XD, and Sketch</li>
+                  <li>Conducting usability tests and user research</li>
+                  <li>Designing for web, mobile, and responsive platforms</li>
+                </ul>
+              
+                <p><strong>Who Should Join:</strong></p>
+                <ul>
+                  <li>Beginners exploring design or front-end roles</li>
+                  <li>Developers interested in improving product design</li>
+                  <li>Students looking to build a UI/UX portfolio</li>
+                </ul>
+              
+                <p><strong>Extras:</strong> Portfolio project, Certificate of Completion, Feedback from industry experts</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="modal-btn" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+</html>
