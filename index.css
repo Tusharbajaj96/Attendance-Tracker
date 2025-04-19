@@ -852,4 +852,69 @@ header h4 {
     color: white;
     font-size: 16px;
   }
+  body.dark-mode{
+    background-color: rgb(34, 33, 33);
+    color: white;
+  }
+  .dark-mode .sidebar,
+  .dark-mode .menu {
+      background-color: #151515;
+      border-right: 1px solid #2c2c2c;
+  }
+  
+  .dark-mode .menu a {
+      color: #e0e0e0;
+  }
+  .dark-mode main{
+      background-color: #222;
+  }
+  .dark-mode .menu a:hover {
+      background-color: #2a2a2a;
+      color: #ffffff;
+  }
+  .dark-mode header,
+  .dark-mode .head {
+      background-color: #1f1f1f;
+      border-bottom: 1px solid #333;
+  }
+  
+  .dark-mode .search-box {
+      background-color: #2e2e2e;
+      color: #ffffff;
+      border: 1px solid #444;
+  }
+  
+  .dark-mode .search-box::placeholder {
+      color: #bbbbbb;
+  }
+  
+  
+  .dark-mode select {
+      background-color: #2c2c2c;
+      color: #e0e0e0;
+      border: 1px solid #444;
+      border-radius: 8px;
+      padding: 6px 12px;
+      transition: all 0.2s ease;
+  }
+  
+  .dark-mode button:hover,
+  .dark-mode select:hover {
+      background-color: #8a8787;
+  }
+  .dark-mode .course,
+  .dark-mode .exam,
+  .dark-mode .c-schedule{
+    color: black;
+  }
+  .dark-mode .attendence,
+  .dark-mode .schedule{
+    background-color: #343333;
+  }
+  .dark-mode .head i,
+  .dark-mode .name,
+  .dark-mode .edit-icon{
+    color: black;
+  }
+  
   
