@@ -12,7 +12,7 @@ const attendanceChart = new Chart(ctx, {
     }]
   },
   options: {
-    responsive: false,
+    responsive: true,
     maintainAspectRatio: false,
     plugins: {
       legend: { display: false },
