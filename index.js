@@ -183,32 +183,56 @@ document.addEventListener('DOMContentLoaded', () => {
 );
 const allCourseStats = {
   math: {
+    totalPresentation:10,
+    totalReports: 12,
+    totalExam: 8,
     totalModules: 20,
     done: 12,
     onProgress: 5,
-    toDo: 3
+    toDo: 3,
+    presentation: 2,
+    report: 3,
+    exam: 1
   },
   os: {
+    totalPresentation:10,
+    totalReports: 12,
+    totalExam: 8,
     totalModules: 15,
     done: 8,
     onProgress: 4,
-    toDo: 3
+    toDo: 3,
+    presentation: 4,
+    report: 2,
+    exam: 3
   },
   physics: {
+    totalPresentation:10,
+    totalReports: 12,
+    totalExam: 8,
     totalModules: 18,
     done: 6,
     onProgress: 7,
-    toDo: 5
+    toDo: 5,
+    presentation: 3,
+    report: 1,
+    exam: 7
   },
   c: {
+    totalPresentation:10,
+    totalReports: 12,
+    totalExam: 8,
     totalModules: 13,
     done: 7,
     onProgress: 2,
-    toDo: 4
+    toDo: 4,
+    presentation: 6,
+    report: 9,
+    exam: 5
   }
 };
 function updateCourseStatistics(course) {
-  const { totalModules, done, onProgress, toDo } = course;
+  const { totalModules, done, onProgress, toDo ,presentation,report,exam,totalPresentation,totalExam,totalReports} = course;
 
   const donePercent = Math.round((done / totalModules) * 100);
   const onPercent = Math.round((onProgress / totalModules) * 100);
@@ -221,6 +245,10 @@ function updateCourseStatistics(course) {
   document.getElementById('doneProgress').style.width = `${donePercent}%`;
   document.getElementById('onProgress').style.width = `${onPercent}%`;
   document.getElementById('todoProgress').style.width = `${todoPercent}%`;
+
+  document.getElementById('presentation').textContent = `${presentation}/${totalPresentation}`;
+  document.getElementById('exam').textContent = `${exam}/${totalExam}`;
+  document.getElementById('report').textContent =`${report}/${totalReports}`;
 }
 function onCourseChange() {
   const selectedCourse = document.getElementById('courseSelect').value;
