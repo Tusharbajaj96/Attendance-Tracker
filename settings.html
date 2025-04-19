@@ -55,7 +55,7 @@
                 <div class="voice"><i class="fa-solid fa-microphone voice-btn"></i></div>
             </div>
             <div class="person-info">
-                <div class="mode"><i class="fa-regular fa-sun page-mode"></i><i class="fa-solid fa-moon page-mode"></i>
+                <div class="mode" onclick="toggleTheme()"><i class="fa-regular fa-sun page-mode"></i><i class="fa-solid fa-moon page-mode"></i>
                 </div>
                 <div class="bell-icon" id="bell-box"><i class="fa-solid fa-bell"></i></div>
                 <div class="info"><img src="/images/person-logo.jpg" alt="" class="person-img"> <span
@@ -70,7 +70,53 @@
             <button class="tab-btn" data-target="additional">Additional Settings</button>
         </div>
         <hr>
-        
+        <div class="settings">
+            <div class="account tab-section" id="profile">
+                <div class="acc-h">
+                    <span>Your Profile Picture</span>
+                </div>
+                <div class="acc-img">
+                    <img src="/images/person-logo.jpg" alt="" class="acc-i">
+                    <button>Upload New</button>
+                    <button>Remove Profile Picture</button>
+                </div>
+                <hr>
+                <div class="acc-info">
+                    <div class="acc-name p-info">
+                        <span>Full Name</span>
+                        <div class="info-div">
+                            Radhika
+                        </div>
+                    </div>
+                    <div class="acc-email p-info">
+                        <span>Email Address</span>
+                        <div class="info-div">
+                            radhikamadaan42@gmail.com
+                        </div>
+                    </div>
+                    <div class="username p-info">
+                        <span>
+                            Username
+                        </span>
+                        <div class="info-div">Radhika1234</div>
+                    </div>
+                    <div class="phone p-info">
+                        <span>Phone Number</span>
+                        <div class="info-div">
+                            +91 89666-XXXXX
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-bio">
+                    <span>Bio</span>
+                    <div class="bio-box"></div>
+                </div>
+                <div class="update">
+                    <button id="editBtn">Edit</button>
+                    <button>Update Profile</button>
+                </div>
+            </div>
+        </div>
     </main>
    
 </body>
