@@ -278,7 +278,10 @@ main {
 hr {
     width: 90%;
 }
-
+.settings {
+    margin: 20px;
+    height: 100vh;
+}
 
 .set-h {
     display: flex;
@@ -289,15 +292,126 @@ hr {
     margin: 10px;
     background-color: black;
     color: white;
-    width: 20%;
+    width: 70%;
     height: 40px;
     border-radius: 10px;
     border: transparent;
-    transition: all 0.3s;
 }
-.set-h button:hover{
-    background-color: rgb(117, 115, 115);
-}
+.account {
+    padding: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow-y: hidden;
+  }
+  
+  .acc-h {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .acc-img {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .acc-img img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  
+  .acc-img button {
+    padding: 0.6rem 1rem;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .acc-img button:hover {
+    background-color: #2980b9;
+  }
+  
+  .acc-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top:10px ;
+  }
+  
+  .p-info {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+  }
+  
+  .p-info span {
+    font-weight: 500;
+    display: block;
+    color: #555;
+    margin-bottom: 0.3rem;
+  }
+  
+  .info-div {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .acc-bio {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .acc-bio span {
+    font-weight: 500;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bio-box {
+    width: 95%;
+    min-height: 100px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .update {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .update button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #27ae60;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update button:hover {
+    background-color: #1e8449;
+  }
+  
 @media (max-width: 800px) {
     header {
         position: fixed;
