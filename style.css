@@ -1474,5 +1474,36 @@ main{
   .card a:hover {
     text-decoration: underline;
   }
-
+  .fee-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .fee-table td {
+    padding: 8px 0;
+  }
+  
+  .paid {
+    color: rgb(23, 94, 23);
+    font-weight: bold;
+  }
+  
+  .pending {
+    color: rgb(230, 11, 11);
+    font-weight: bold;
+  }
+    
+  .btn {
+    background-color:#0056b3;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
   
