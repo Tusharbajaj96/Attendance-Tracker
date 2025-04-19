@@ -1484,17 +1484,17 @@ main{
   }
   
   .paid {
-    color: rgb(13, 14, 13);
+    color: rgb(23, 94, 23);
     font-weight: bold;
   }
   
   .pending {
-    color: rgb(19, 15, 15);
+    color: rgb(230, 11, 11);
     font-weight: bold;
   }
     
   .btn {
-    background-color: #b1446d;
+    background-color:#0056b3;
     border: none;
     color: white;
     padding: 5px 12px;
