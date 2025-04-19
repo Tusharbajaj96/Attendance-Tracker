@@ -852,9 +852,4 @@ header h4 {
     color: white;
     font-size: 16px;
   }
-  @media (max-width: 600px) {
-    .chart-container {
-      height: 120px; /* Now it shrinks but Chart.js may not redraw properly */
-    }
-  }
   
