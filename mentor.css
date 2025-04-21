@@ -462,70 +462,6 @@ main {
     background-color: rgb(251, 201, 107) ;
     cursor: pointer;
 }
-.feedback-h{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-.feedback-sub{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.feedback-box{
-    width: 90%;
-    height: 7vh;
-}
-.feedback-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.feedback-btn button{
-    width: 30%;
-    height: 4vh;
-    background-color: orange;
-    border-radius: 10px;
-    transition: all 0.3s;
-    margin: 20px;
-    border: 1px solid orange;
-}
-.feedback-btn button:hover{
-    background-color: rgb(251, 201, 107);
-    cursor: pointer;
-    
-}
-.notification-box{
-    opacity: 0;
-  transform: translateY(-10px);
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: white;
-  width: 260px;
-  padding: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  z-index: 999;
-  }
-  .notification-box.show {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-  .stars i {
-    font-size: 1rem;
-    color: gray;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  .stars i.filled {
-    color: gold;
-  }
-  
 @media (max-width: 1035px) {
     .nav-item i {
         font-size: 1vw;
@@ -650,7 +586,12 @@ main {
         justify-content: flex-end;
         margin-left: 15vw;
     }
-   
+    .mentor-con{
+        flex-direction: column;
+    }
+    .contact-form{
+        width: 100%;
+    }
 }
 @media (max-width:605px) {
     .status{
@@ -662,9 +603,7 @@ main {
     .head-logo{
         width: 8%;
     }
-    .ques{
-        font-size: 3vw;
-    }
+    
 }
 @media (max-width: 420px) {
     .name{
@@ -713,6 +652,15 @@ main {
     }
     main {
         height: auto;
+    }
+    .contact-btn button{
+        font-size: 2vw;
+    }
+    .contact-head{
+        font-size: 2vw;
+    }
+    .mail-text{
+        font-size: 1.8vw;
     }
 }
 
