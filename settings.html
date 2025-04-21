@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-brand">
+            <img src="/images/a simple modern design with a white background and a small colored icon logo for Academix.png"
+                alt="img" class="logo">
+            Academix
+        </div>
+
+        <h4>Menu</h4>
+        <div class="nav-container">
+            <div class="nav-item" onclick="window.location.href='../index.html'"><i
+                    class="fa-solid fa-chart-line"></i><span>Dashboard</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="nav-item" onclick="window.location.href='student.html'"><i
+                    class="fa-solid fa-user"></i><span>Student Profile</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="nav-item" onclick="window.location.href='mentor.html'"><i
+                    class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i
+                    class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item" onclick="window.location.href='attendence.html'"><i
+                    class="fa-solid fa-chart-bar"></i><span>Attendence</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="nav-item" onclick="window.location.href='settings.html'"> <i
+                    class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="nav-item logout" ><i class="fa-solid fa-sign-out-alt"></i><span>Log Out</span><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+    </header>
+    <main>
+        <div class="head">
+            <div class="menu-item">Settings <br>
+                <span class="date">18 March, 2025</span>
+            </div>
+            <img src="/images/a simple modern design with a white background and a small colored icon logo for Academix.png simple modern design with a white background and a small colored icon logo for Academix.png"
+                alt="img" class="head-logo">
+            <div class="search">
+                <div class="btn"><i class="fas fa-search search-btn"></i></div></i><input type="search"
+                    placeholder="Search anything" class="search-box">
+                <div class="voice"><i class="fa-solid fa-microphone voice-btn"></i></div>
+            </div>
+            <div class="person-info">
+                <div class="mode" onclick="toggleTheme()"><i class="fa-regular fa-sun page-mode"></i><i class="fa-solid fa-moon page-mode"></i>
+                </div>
+                <div class="bell-icon" id="bell-box"><i class="fa-solid fa-bell"></i></div>
+                <div class="info"><img src="/images/person-logo.jpg" alt="" class="person-img"> <span
+                        class="name">Radhika</span> <br> <span class="status">Web
+                        Developer</span></div>
+            </div>
+        </div>
+        <div class="set-h">
+            <button class="tab-btn" data-target="profile"> Account Settings</button>
+            <button class="tab-btn" data-target="security">Login & Security</button>
+            <button class="tab-btn" data-target="notification">Notification Settings</button>
+            <button class="tab-btn" data-target="additional">Additional Settings</button>
+        </div>
+        <hr>
+        <div class="settings">
+            <div class="account tab-section" id="profile">
+                <div class="acc-h">
+                    <span>Your Profile Picture</span>
+                </div>
+                <div class="acc-img">
+                    <img src="/images/person-logo.jpg" alt="" class="acc-i">
+                    <button>Upload New</button>
+                    <button>Remove Profile Picture</button>
+                </div>
+                <hr>
+                <div class="acc-info">
+                    <div class="acc-name p-info">
+                        <span>Full Name</span>
+                        <div class="info-div">
+                            Radhika
+                        </div>
+                    </div>
+                    <div class="acc-email p-info">
+                        <span>Email Address</span>
+                        <div class="info-div">
+                            radhikamadaan42@gmail.com
+                        </div>
+                    </div>
+                    <div class="username p-info">
+                        <span>
+                            Username
+                        </span>
+                        <div class="info-div">Radhika1234</div>
+                    </div>
+                    <div class="phone p-info">
+                        <span>Phone Number</span>
+                        <div class="info-div">
+                            +91 89666-XXXXX
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-bio">
+                    <span>Bio</span>
+                    <div class="bio-box"></div>
+                </div>
+                <div class="update">
+                    <button id="editBtn">Edit</button>
+                    <button>Update Profile</button>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+</body>
