@@ -462,6 +462,41 @@ main {
     background-color: rgb(251, 201, 107) ;
     cursor: pointer;
 }
+.feedback-h{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.feedback-sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feedback-box{
+    width: 90%;
+    height: 7vh;
+}
+.feedback-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feedback-btn button{
+    width: 30%;
+    height: 4vh;
+    background-color: orange;
+    border-radius: 10px;
+    transition: all 0.3s;
+    margin: 20px;
+    border: 1px solid orange;
+}
+.feedback-btn button:hover{
+    background-color: rgb(251, 201, 107);
+    cursor: pointer;
+    
+}
+
 @media (max-width: 1035px) {
     .nav-item i {
         font-size: 1vw;
@@ -592,6 +627,13 @@ main {
     .contact-form{
         width: 100%;
     }
+    .upcoming-events{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .dark-mode .head i{
+        color: white !important;
+    }
 }
 @media (max-width:605px) {
     .status{
@@ -603,7 +645,9 @@ main {
     .head-logo{
         width: 8%;
     }
-    
+    .ques{
+        font-size: 3vw;
+    }
 }
 @media (max-width: 420px) {
     .name{
@@ -652,6 +696,15 @@ main {
     }
     main {
         height: auto;
+    }
+    .up-head1{
+        font-size: 2vw;
+    }
+    .ques{
+        font-size: 1.5vw;
+    }
+    .query-btn button{
+        font-size: 2vw;
     }
     .contact-btn button{
         font-size: 2vw;
