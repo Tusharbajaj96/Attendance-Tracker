@@ -23,3 +23,15 @@ A modern, responsive attendance management web application designed for students
 - *JavaScript*
 - *Font Awesome* (for icons)
 - *Git + GitHub* (for collaboration and SCM)
+## Team Members
+| Role | Responsibilty   |
+|------|-----------------|
+| Tushar Bajaj| Manager-Tester|
+| Radhika| Developer|
+| Pooja Kanwar| Developer|
+| Raima Dhingra| Developer|
+| Simranpreet Kaur| Developer|
+
+## License
+This project is for academic/demo purposes only.
+All rights reserved 2025
