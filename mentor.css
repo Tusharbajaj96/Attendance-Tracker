@@ -127,6 +127,22 @@ header h4 {
         background-color: transparent;
         cursor: default;
     }
+    .menu-item {
+        display: none;
+    }
+    .head-logo{
+        display: block;
+        margin-left: 2%;
+        font-size: 1.6vw;
+        margin-bottom: 1%;
+        width: 6%;
+        background-color: transparent;
+        margin: 0 3px;
+        aspect-ratio: 1/1;
+    }
+    main{
+        margin-left: 0;
+    }
 }
 main{
     height: 100vh;
@@ -264,4 +280,80 @@ main {
 }
 .head-logo{
     display: none;
+}
+.mentor-info{
+    width: 90%;
+    height: 35vh;
+    margin: 20px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.mentor-head{
+    padding: 10px;
+}
+.m-info{
+    margin:10px;
+    font-size: 26px;
+    background-color: transparent;
+}
+.men-img{
+    width: 20%;
+    border-right: 2px solid lightgrey;
+
+}
+.men-info{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+.data{
+    height: 15vh;
+    width: 100%;
+    border-bottom: 2px solid lightgrey;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.m-img{
+    width: 130px;
+    aspect-ratio: 1/1;
+    border-radius:50% ;
+}
+.men-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.percent{
+    height: 3px;
+    background-color: gray;
+    width: 60%;
+    margin-top: 10px;
+}
+.p-fill{
+    height: 100%;
+    width: 30%;
+    background-color:rgb(58, 122, 58);
+}
+.m-head{
+    margin: 8px 4px;
+    font-size: 0.9vw;
+    color: #7a7474;
+}
+.m-sub{
+    font-size:0.9vw;
+    color: #7a7474;
+    margin-right: 5px;
+    margin-left: 4px;
+}
+.m-data{
+    font-size: 0.9vw;
+    color: black;
+    margin-right: 10px;
 }
