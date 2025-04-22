@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/settings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-brand">
+            <img src="/images/a simple modern design with a white background and a small colored icon logo for Academix.png"
+                alt="img" class="logo">
+            Academix
+        </div>
+
+        <h4>Menu</h4>
+        <div class="nav-container">
+            <div class="nav-item" onclick="window.location.href='../index.html'"><i
+                    class="fa-solid fa-chart-line"></i><span>Dashboard</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="nav-item" onclick="window.location.href='student.html'"><i
+                    class="fa-solid fa-user"></i><span>Student Profile</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="nav-item" onclick="window.location.href='mentor.html'"><i
+                    class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i
+                    class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item" onclick="window.location.href='attendence.html'"><i
+                    class="fa-solid fa-chart-bar"></i><span>Attendence</span><i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="nav-item" onclick="window.location.href='settings.html'"> <i
+                    class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="nav-item logout" ><i class="fa-solid fa-sign-out-alt"></i><span>Log Out</span><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+    </header>
+    <main>
+        <div class="head">
+            <div class="menu-item">Settings <br>
+                <span class="date">18 March, 2025</span>
+            </div>
+            <img src="/images/a simple modern design with a white background and a small colored icon logo for Academix.png simple modern design with a white background and a small colored icon logo for Academix.png"
+                alt="img" class="head-logo">
+            <div class="search">
+                <div class="btn"><i class="fas fa-search search-btn"></i></div></i><input type="search"
+                    placeholder="Search anything" class="search-box">
+                <div class="voice"><i class="fa-solid fa-microphone voice-btn"></i></div>
+            </div>
+            <div class="person-info">
+                <div class="mode" onclick="toggleTheme()"><i class="fa-regular fa-sun page-mode"></i><i class="fa-solid fa-moon page-mode"></i>
+                </div>
+                <div class="bell-icon" id="bell-box"><i class="fa-solid fa-bell"></i></div>
+                <div class="info"><img src="/images/person-logo.jpg" alt="" class="person-img"> <span
+                        class="name">Radhika</span> <br> <span class="status">Web
+                        Developer</span></div>
+            </div>
+        </div>
+        <div class="set-h">
+            <button class="tab-btn" data-target="profile"> Account Settings</button>
+            <button class="tab-btn" data-target="security">Login & Security</button>
+            <button class="tab-btn" data-target="notification">Notification Settings</button>
+            <button class="tab-btn" data-target="additional">Additional Settings</button>
+        </div>
+        <hr>
+        <div class="settings">
+
+            <div class="security tab-section" id="security">
+                <div class="password">
+                    <span class="sec-head">Password</span>
+                    <div class="sec-p"><div class="pass">........</div>
+                    <button class="sec-btn">Change Password</button>
+                    </div>
+                </div>
+                <div class="two-factor">
+                    <span class="sec-head">Two-Factor Authentication</span><br>
+                    <div class="two-sub"><span>Add an extra layer of security to your account.</span>
+                    <button class="sec-btn">Turn On</button></div>
+                </div>
+
+                <div class="login-activity">
+                    <span class="sec-head">Login Activities</span>
+                    <div class="sec-l">
+                        <div class="act"><div class="lap"><i class="fas fa-laptop"></i></div>
+                            <div class="device">India <br>
+                                Chrome. Mumbai</div>
+                            <span class="time">16 minutes ago</span>
+                            <button class="sec-btn">Log Out</button>
+                        </div>
+                        <div class="act"><div class="lap"><i class="fas fa-laptop"></i></div>
+                            <div class="device">India <br>
+                                Windows.   Delhi</div>
+                            <span class="time">16 minutes ago</span>
+                            <button class="sec-btn">Log Out</button>
+                        </div>
+                        <div class="act"><div class="lap"><i class="fas fa-laptop"></i></div>
+                            <div class="device">India <br>
+                                One Plus 12R. Delhi</div>
+                            <span class="time">16 minutes ago</span>
+                            <button class="sec-btn">Log Out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-v">
+                    <span class="sec-head">Email Verification</span>
+                   <div class="mail-box"> <div class="email">radhikamadaan42@gmail.com
+                    </div>
+                    <button class="sec-btn">Verify</button>
+                   </div>
+                </div>
+                <div class="phone-v">
+                    <span class="sec-head">Phone Verification</span>
+                    <div class="mail-box"> <div class="email">+91 89666-XXXXX
+                    </div>
+                    <button class="sec-btn">Verify</button>
+                   </div>
+                </div>
+            </div>
+           
+              
+        </div>
+    </main>
+</body>
