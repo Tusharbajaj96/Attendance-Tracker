@@ -71,7 +71,7 @@ const courseData = {
       height: 500,
       events: []
     });
-
+    calendar.render()
     
     document.getElementById('courseSelect').addEventListener('change', function () {
       const selectedCourse = this.value;
