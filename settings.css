@@ -287,10 +287,10 @@ hr {
 
 .set-h button {
     margin: 10px;
-    background-color: rgb(242, 236, 236);
+    background-color: black;
     color: white;
     width: 70%;
-    height: 60px;
+    height: 30px;
     border-radius: 10px;
     border: transparent;
 }
@@ -413,6 +413,37 @@ hr {
 .sec-btn:hover {
     background-color: #c82333;
 }
+
+.email-v, .phone-v {
+    margin-top: 20px;
+}
+
+.mail-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mail-box .email {
+    color: #555;
+    font-size: 1rem;
+}
+
+.mail-box .sec-btn {
+    background-color: #ffc107;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+}
+
+.mail-box .sec-btn:hover {
+    background-color: #e0a800;
+}
+
 
 
 @media (max-width: 800px) {
