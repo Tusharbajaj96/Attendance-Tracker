@@ -61,13 +61,13 @@ main {
 .mail {
     display: flex;
     background-color: white;
-    width: 50%;
+    width: 80%;
 }
 
 .password {
     display: flex;
     background-color: white;
-    width: 50%;
+    width: 80%;
 }
 
 .log-icon {
