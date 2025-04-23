@@ -5,35 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="mentor.css">
+    <link rel="stylesheet" href="/css/mentor.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-   
 </head>
 
 <body>
-    <header>
+     <header> 
         <div class="nav-brand">
-            <img src="a simple modern design with a white background and a small colored icon logo for Academix.png"
+            <img src="/images/a simple modern design with a white background and a small colored icon logo for Academix.png"
                 alt="img" class="logo">
             Academix
         </div>
 
         <h4>Menu</h4>
         <div class="nav-container">
-            <div class="nav-item" onclick="window.location.href='index.html'"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span><i class="fa-solid fa-arrow-right"></i></div>
-            <div class="nav-item" onclick="window.location.href='pages/student.html'"><i class="fa-solid fa-user"></i><span>Student Profile</span><i class="fa-solid fa-arrow-right"></i></div>
-            <div class="nav-item" onclick="window.location.href='pages/mentor.html'"><i class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i class="fa-solid fa-arrow-right"></i></div>
-            <div class="nav-item" onclick="window.location.href='pages/attendence.html'"><i class="fa-solid fa-chart-bar"></i><span>Attendance</span><i class="fa-solid fa-arrow-right"></i></div>
-            <div class="nav-item" onclick="window.location.href='pages/settings.html'"> <i class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
-            <div class="nav-item logout"><i class="fa-solid fa-sign-out-alt"></i><span>Log Out</span><i class="fa-solid fa-arrow-right"></i></div>
-        </div>
+            <div class="nav-item" onclick="window.location.href='../index.html'"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item" onclick="window.location.href='student.html'"><i class="fa-solid fa-user"></i><span>Student Profile</span><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item" onclick="window.location.href='mentor.html'"><i class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item" onclick="window.location.href='attendance.html'"><i class="fa-solid fa-chart-bar"></i><span>Attendence</span><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item" onclick="window.location.href='settings.html'"> <i class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item logout" ><i class="fa-solid fa-sign-out-alt"></i><span>Log Out</span><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
 
-    </header>
+    </header> 
+     
     <main>
         <div class="head">
             <div class="menu-item">Mentor Info<br>
@@ -54,6 +54,11 @@
                         class="name">Radhika</span> <br> <span class="status">Web
                         Developer</span></div>
             </div>
+        </div>
+        <div class="notification-box" id="notify-box">
+            <p>There is an event at 2:00 PM</p>
+            <p>There is an event at 2:00 PM</p>
+            <p>There is an event at 2:00 PM</p>
         </div>
         <div class="mentor-head">
             <span class="m-info">Mentor's Information</span>
@@ -130,37 +135,41 @@
                     <button>SEND</button>
                 </div>
                 </div>
-                <div class="upcoming-events">
-                    <div class="st-head">
-                    <div class="up-head1" id="query" onclick="ShowContent('st-query')">
-                        Student Queries & FAQs
-                    </div>
-                    <div class="up-head1" id="feedback" onclick="ShowContent('st-feedback')">
-                        Add a Feedback
-                    </div>
-                    </div>
-                    <div class="up-sub" id="st-query">
-                    <div class="ques"><span class="question"> 1.How can I contact the mentor? </span><br>
-                        <span class="ans"><i class="fa fa-arrow-right"></i> Email or visit during office hours.</span>
-                    </div>
-                    <div class="ques"><span class="question">2. Can I schedule a 1-on-1 session? </span><br>
-                       <span class="ans"> <i class="fa fa-arrow-right"></i>Yes, use the "Schedule a Meeting" option.</span></div>
-                    <div class="ques"><span class="question">3. What topics can the mentor help with?</span> <br>
-                        <span class="ans"><i class="fa fa-arrow-right"></i> AI, Machine Learning, Research, Project Guidance</span>
-    
-                    </div>
-                    <div class="query-btn">
-                        <button>Add your Query</button>
-                    </div>
-                    </div>
-                    <div class="up-sub2" id="st-feedback">
-                        <div class="feedback-h"><span class="sub-head">Write a Feedback</span></div>
-                        <div class="feedback-sub"><textarea name="feedback"placeholder="Write your Feedback" class="feedback-box"></textarea></div>
-                        <div class="feedback-btn">
-                            <button>Add the feedback</button>
-                        </div>
+            <div class="upcoming-events">
+                <div class="st-head">
+                <div class="up-head1" id="query" onclick="ShowContent('st-query')">
+                    Student Queries & FAQs
+                </div>
+                <div class="up-head1" id="feedback" onclick="ShowContent('st-feedback')">
+                    Add a Feedback
+                </div>
+                </div>
+                <div class="up-sub" id="st-query">
+                <div class="ques"><span class="question">1. How can I contact the mentor? </span><br>
+                    <span class="ans"><i class="fa fa-arrow-right"></i> Email or visit during office hours.</span>
+                </div>
+                <div class="ques"><span class="question">2. Can I schedule a 1-on-1 session? </span><br>
+                   <span class="ans"> <i class="fa fa-arrow-right"></i>Yes, use the "Schedule a Meeting" option.</span></div>
+                <div class="ques"><span class="question">3. What topics can the mentor help with?</span> <br>
+                    <span class="ans"><i class="fa fa-arrow-right"></i> AI, Machine Learning, Research, Project Guidance</span>
+
+                </div>
+                <div class="query-btn">
+                    <button>Add your Query</button>
+                </div>
+                </div>
+                <div class="up-sub2" id="st-feedback">
+                    <div class="feedback-h"><span class="sub-head">Write a Feedback</span></div>
+                    <div class="feedback-sub"><textarea name="feedback"placeholder="Write your Feedback" class="feedback-box"></textarea></div>
+                    <div class="feedback-btn">
+                        <button>Add the feedback</button>
                     </div>
                 </div>
+            </div>
         </section>
     </main>
+    <script src="/js/mentor.js"></script>
 </body>
+
+  
+</html>
