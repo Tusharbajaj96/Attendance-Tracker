@@ -35,7 +35,7 @@
                     class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i
                     class="fa-solid fa-arrow-right"></i></div>
             <div class="nav-item" onclick="window.location.href='attendence.html'"><i
-                    class="fa-solid fa-chart-bar"></i><span>Attendence</span><i class="fa-solid fa-arrow-right"></i>
+                    class="fa-solid fa-chart-bar"></i><span>Attendance</span><i class="fa-solid fa-arrow-right"></i>
             </div>
             <div class="nav-item" onclick="window.location.href='settings.html'"> <i
                     class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
@@ -71,51 +71,144 @@
         </div>
         <hr>
         <div class="settings">
-            <div class="account tab-section" id="profile">
-                <div class="acc-h">
-                    <span>Your Profile Picture</span>
-                </div>
-                <div class="acc-img">
-                    <img src="/images/person-logo.jpg" alt="" class="acc-i">
-                    <button>Upload New</button>
-                    <button>Remove Profile Picture</button>
-                </div>
-                <hr>
-                <div class="acc-info">
-                    <div class="acc-name p-info">
-                        <span>Full Name</span>
-                        <div class="info-div">
-                            Radhika
-                        </div>
-                    </div>
-                    <div class="acc-email p-info">
-                        <span>Email Address</span>
-                        <div class="info-div">
-                            radhikamadaan42@gmail.com
-                        </div>
-                    </div>
-                    <div class="username p-info">
-                        <span>
-                            Username
-                        </span>
-                        <div class="info-div">Radhika1234</div>
-                    </div>
-                    <div class="phone p-info">
-                        <span>Phone Number</span>
-                        <div class="info-div">
-                            +91 89666-XXXXX
-                        </div>
+          <div class="account tab-section" id="profile">
+            <div class="acc-h">
+                <span>Your Profile Picture</span>
+            </div>
+            <div class="acc-img">
+                <img src="/images/person-logo.jpg" alt="" class="acc-i">
+                <button>Upload New</button>
+                <button>Remove Profile Picture</button>
+            </div>
+            <hr>
+            <div class="acc-info">
+                <div class="acc-name p-info">
+                    <span>Full Name</span>
+                    <div class="info-div">
+                        Radhika
                     </div>
                 </div>
-                <div class="acc-bio">
-                    <span>Bio</span>
-                    <div class="bio-box"></div>
+                <div class="acc-email p-info">
+                    <span>Email Address</span>
+                    <div class="info-div">
+                        radhikamadaan42@gmail.com
+                    </div>
                 </div>
-                <div class="update">
-                    <button id="editBtn">Edit</button>
-                    <button>Update Profile</button>
+                <div class="username p-info">
+                    <span>
+                        Username
+                    </span>
+                    <div class="info-div">Radhika1234</div>
+                </div>
+                <div class="phone p-info">
+                    <span>Phone Number</span>
+                    <div class="info-div">
+                        +91 89666-XXXXX
+                    </div>
                 </div>
             </div>
+            <div class="acc-bio">
+                <span>Bio</span>
+                <div class="bio-box"></div>
+            </div>
+            <div class="update">
+                <button id="editBtn">Edit</button>
+                <button>Update Profile</button>
+            </div>
+        </div>
+          <div class="notifications tab-section" id="notification">
+            <div class="general"><div class="n-text"><span>Enable All Notifications </span></div><div class="n-btn"><label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+              </div>
+            </div>
+            <div class="types">
+                <span>Notifications</span>
+                <div class="n-sub">
+                    <div class="n-type">Attendance Marked</div>
+                    <div class="mail-c"><div class="n-mail"><span>Email</span></div><label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label></div>
+                    <div class="push-c"><div class="n-mail"><span>Push Notifications</span></div><label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label></div>
+                </div>
+                <div class="n-sub">
+                    <div class="n-type">Absent Alert</div>
+                    <div class="mail-c"><div class="n-mail"><span>Email</span></div><label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label></div>
+                    <div class="push-c"><div class="n-mail"><span>Push Notifications</span></div><label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label></div>
+                </div>
+                <div class="n-sub">
+                    <div class="n-type">Low Attendance Warning</div>
+                    <div class="mail-c"><div class="n-mail"><span>Email</span></div><label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label></div>
+                    <div class="push-c"><div class="n-mail"><span>Push Notifications</span></div><label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label></div>
+                </div>
+                <div class="n-sub">
+                    <div class="n-type">Monthly Summary Report</div>
+                    <div class="mail-c"><div class="n-mail"><span>Email</span></div><label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label></div>
+                    <div class="push-c"><div class="n-mail"><span>Push Notifications</span></div><label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label></div>
+                </div>
+                <div class="n-sub">
+                    <div class="n-type">New Announement</div>
+                    <div class="mail-c"><div class="n-mail"><span>Email</span></div><label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label></div>
+                    <div class="push-c"><div class="n-mail"><span>Push Notifications</span></div><label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label></div>
+                </div>
+            </div>
+            <div class="dnd-section">
+                <div class="general"><div class="n-text"><span>Do Not Disturb</span></div><div class="n-btn"><label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                  </div>
+                </div>
+                <div class="dnd-time">
+                  <label>From:
+                    <input type="time" value="22:00">
+                  </label>
+                  <label>To:
+                    <input type="time" value="07:00">
+                  </label>
+                </div>
+              
+                <div class="dnd-days">
+                  <span class="day selected">M</span>
+                  <span class="day selected">T</span>
+                  <span class="day">W</span>
+                  <span class="day">T</span>
+                  <span class="day">F</span>
+                  <span class="day">S</span>
+                  <span class="day">S</span>
+                </div>
+              </div>
+              
+        </div>
         </div>
     </main>
    
