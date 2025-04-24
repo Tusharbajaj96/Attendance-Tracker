@@ -32,6 +32,10 @@ A modern, responsive attendance management web application designed for students
 | Raima Dhingra| Developer|
 | Simranpreet Kaur| Developer|
 
+## 📘 Project Overview
+
+This project is designed to simplify attendance management for educational institutions by providing students, mentors, and admins with a central dashboard to track schedules, attendance, and communication.
+
 ## License
 This project is for academic/demo purposes only.
 All rights reserved 2025
