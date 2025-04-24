@@ -1,16 +1,16 @@
 
     window.onload = function () {
-      ShowContent('st-query'); 
+      ShowContent('st-Query'); 
     };
   
     function ShowContent(sectionId) {
-      const querySection = document.getElementById('st-query');
+      const querySection = document.getElementById('st-Query');
       const feedbackSection = document.getElementById('st-feedback');
   
       const queryTab = document.getElementById('query');
       const feedbackTab = document.getElementById('feedback');
   
-      if (sectionId === 'st-query') {
+      if (sectionId === 'st-Query') {
         querySection.style.display = 'block';
         feedbackSection.style.display = 'none';
         queryTab.classList.add('active');
