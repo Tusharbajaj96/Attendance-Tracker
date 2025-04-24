@@ -71,19 +71,16 @@ header h4 {
 }
 
 @media (max-width: 1035px) {
-    .nav-item i {
+    .nav-item i{
         font-size: 1vw;
     }
-
-    .nav-item {
+    .nav-item{
         font-size: 1vw;
     }
-
-    .nav-brand {
+    .nav-brand{
         font-size: 2vw;
     }
 }
-
 @media (max-width: 800px) {
     header {
         position: fixed;
@@ -94,9 +91,9 @@ header h4 {
     }
 
     header .nav-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        display: flex;  
+        justify-content: space-around;  
+        align-items: center;  
         width: 100%;
         height: 100%;
     }
@@ -114,33 +111,28 @@ header h4 {
     }
 
     .fa-arrow-right {
-        display: none;
+        display: none; 
     }
 
-    .nav-brand,
-    header h4 {
+    .nav-brand, header h4 {
         display: none;
     }
 
     .nav-item i {
-        font-size: 24px;
+        font-size: 24px; 
     }
-
-    .nav-item:hover .fa-arrow-right {
+    .nav-item:hover .fa-arrow-right{
         opacity: 0;
-    }
-
-    .nav-item:hover {
+}
+    .nav-item:hover{
         background-color: transparent;
         cursor: default;
     }
 }
-
-main {
-    height: auto;
+main{
+    height: 100vh;
     width: 100%;
 }
-
 .head {
     width: 100%;
     height: 80px;
@@ -154,8 +146,8 @@ main {
 main {
     flex-grow: 1;
     margin-left: 15%;
-    background-color: rgb(240, 244, 244);
-
+    background-color:rgb(240, 244, 244);
+    
 }
 
 .menu-item {
@@ -198,7 +190,6 @@ main {
     align-items: center;
     justify-content: center;
     margin-top: 5px;
-    cursor: pointer;
 }
 
 .status {
@@ -270,267 +261,116 @@ main {
     align-items: center;
     aspect-ratio: 1/1;
 }
-
-.head-logo {
+.head-logo{
     display: none;
 }
-
-hr {
-    width: 90%;
-}
-
-.settings {
-    margin: 20px;
-    height: 100vh;
-}
-
-
-.set-h {
+.att-head{
     display: flex;
-    margin: 10px 8px;
-}
 
-.set-h button {
-    margin: 10px;
-    background-color: black;
-    color: white;
-    width: 70%;
-    height: 30px;
-    border-radius: 10px;
-    border: transparent;
 }
-
-.additional-settings {
-    border-radius: 12px;
-    margin-top: 20px;
-    width: 90%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #333;
-    
-  }
-  
-  .additional-settings h3 {
-    font-size: 22px;
-    margin-bottom: 30px;
-    color: #111;
-    font-weight: 600;
-  }
-  
-  .setting-group {
-    margin-bottom: 30px;
-  }
-  
-  .setting-group h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: #222;
-    font-weight: 500;
-  }
-  
-  .setting-item {
+.sort{
+    margin: 20px;
+}
+.graphs{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+.left-section{
+    width: 40%;
+    margin-right: 20px;
+}
+.circle-g{
+    width: 100%;
+    height: 40vh;
+    background-color:white;
+    border-radius: 15px;
+}
+.calender{
+    width: 60%;
+    height: 70vh;
+    background-color:white;
+    border-radius: 15px;
+}
+.circle-g2{
+    width: 100%;
+    height: 28.5vh;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.circle-g2-h{
+    margin: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 12px 20px;
-    margin-bottom: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  }
-  
-  .setting-item select {
-    padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-  }
-  
-  .export-btn {
-    background-color: #4bad42;
-    color: white;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-  }
-  
-  .danger-btn {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-  }
-  
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 42px;
-    height: 22px;
-  }
-  
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-    border-radius: 22px;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 3px;
-    background-color: white;
-    transition: .4s;
-    border-radius: 50%;
-  }
-  
-  input:checked + .slider {
-    background-color: #26a541;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(18px);
-  }
-  
-  .additional-settings span{
-    color: darkgray;
-  }
 
- .account {
-    padding: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    overflow-y: hidden;
-  }
-  
-  .acc-h {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
-  .acc-img {
+}
+.p-a{
     display: flex;
+    justify-content: space-around;
+}
+.box{
+    width: 30%;
+    height: 4vh;
+    border-radius: 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .acc-img img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ddd;
-  }
-  
-  .acc-img button {
-    padding: 0.6rem 1rem;
-    border: none;
-    background-color: #3498db;
-    color: #fff;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .acc-img button:hover {
-    background-color: #2980b9;
-  }
-  
-  .acc-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    margin-top:10px ;
-  }
-  
-  .p-info {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid #eee;
-  }
-  
-  .p-info span {
-    font-weight: 500;
-    display: block;
-    color: #555;
-    margin-bottom: 0.3rem;
-  }
-  
-  .info-div {
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  .acc-bio {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .acc-bio span {
-    font-weight: 500;
-    color: #555;
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  .bio-box {
-    width: 95%;
-    min-height: 100px;
-    background: #f1f1f1;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    padding: 0.8rem;
-    font-size: 0.95rem;
-    color: #333;
-  }
-  
-  .update {
+    font-size: 2vh;
+}
+.Total{
+    background-color: orange;
+}
+.pres{
+    background-color: green;
+}
+.abs{
+    background-color: black;
+}
+.percent{
+    width: 100%;
+    height: 5vh;
     display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-  }
-  
-  .update button {
-    padding: 0.7rem 1.2rem;
-    border: none;
-    border-radius: 6px;
-    background-color: #27ae60;
-    color: #fff;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .update button:hover {
-    background-color: #1e8449;
-  }
-  
+    justify-content:center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 2vw;
 
+}
+.text{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    margin-left: 20px;
+    color: green;
+}
+.text-t{
+    font-size: 1vw;
+}
+#calendar {
+    max-width: 100%;
+  }
+
+@media (max-width: 1035px) {
+    .nav-item i {
+        font-size: 1vw;
+    }
+
+    .nav-item {
+        font-size: 1vw;
+    }
+
+    .nav-brand {
+        font-size: 2vw;
+    }
+    
+
+}
 @media (max-width: 800px) {
     header {
         position: fixed;
@@ -570,7 +410,7 @@ hr {
     }
 
     .nav-item i {
-        font-size: 24px;
+        font-size:24px;
     }
 
     .nav-item:hover .fa-arrow-right {
@@ -585,8 +425,7 @@ hr {
     .menu-item {
         display: none;
     }
-
-    .head-logo {
+    .head-logo{
         display: block;
         margin-left: 2%;
         font-size: 1.6vw;
@@ -596,114 +435,205 @@ hr {
         margin: 0 3px;
         aspect-ratio: 1/1;
     }
-
-    main {
+    main{
         margin-left: 0;
     }
-    .n-type{
-        font-size: 2vw;
+    .text-t{
+        font-size: 1.8vw;
     }
-    .types span{
-        font-size: 2vw;
+    .percent{
+        font-size: 2.6vw;
     }
-    .mail-c{
-        width: 30%;
+    .percent-t{
+        margin-right: 30px;
     }
-}
 
+}
 @media (max-width:665px) {
-    .head {
+    .head{
         justify-content: flex-end;
     }
-
-    .mode {
+    .mode{
         display: none;
     }
-
-    .search-box {
+    .search-box{
         display: none;
     }
-
-    .btn {
+    .btn{
         background-color: transparent;
         top: 5px;
         left: 25px;
 
     }
-
-    .voice {
+    .voice{
         background-color: transparent;
         position: relative;
         right: -2vw;
     }
-
-    .person-info {
+    .person-info{
         justify-content: flex-end;
         width: 30%;
         margin-left: 0;
-
+        
     }
-
-    .bell-icon {
+    .bell-icon{
         margin-right: 5px;
         background-color: transparent;
         margin-top: 2px;
     }
-
-    .head-logo {
+    .head-logo{
         position: relative;
         left: 0;
     }
-
-    .search {
+    .search{
         justify-content: flex-end;
         margin-left: 15vw;
     }
-
+    
 }
-
 @media (max-width:605px) {
-    .status {
+    .status{
         display: none;
     }
-
-    .name {
+    .name{
         top: -5px;
     }
-
-    .head-logo {
+    .head-logo{
         width: 8%;
+    }
+    .percent{
+        font-size: 3vw;
+    }
+    .text-t{
+        font-size: 2.2vw;
     }
 }
 
 @media (max-width: 420px) {
-    .name {
+    .name{
         display: none;
     }
-
-    .info {
+    .info{
         width: 37px;
         background-color: transparent;
         margin-top: 6px;
     }
-
-    .person-info {
+    .person-info{
         width: 20%;
     }
-
-    .search {
+    .search{
         margin-left: 15vw;
     }
-
-    .voice {
+    .voice{
         right: -5vw;
     }
-
-    .btn {
-        left: 32px;
+    .btn{
+        left:32px;
     }
-
-    .head-logo {
+    .head-logo{
         width: 10%;
     }
 }
+@media (max-width:762px) {
+    .graphs{
+        flex-wrap: wrap;
+    }
+    .left-section{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .calender{
+        width: 100%;
+    }
+    main{
+        height: auto;
+    }
+}
+.notification-box{
+    opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
+  width: 260px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  z-index: 999;
+  }
+  .notification-box.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .bell-icon:hover{
+    background-color: darkgray;
+}
+select{
+    background-color:white;
+      color:black;
+      border: 1px solid #a9a7a7;
+      border-radius: 8px;
+      padding: 6px 12px;
+      transition: all 0.2s ease;
+}
+body.dark-mode{
+    background-color: rgb(34, 33, 33);
+    color: white;
+  }
+  .dark-mode .sidebar,
+  .dark-mode .menu {
+      background-color: #151515;
+      border-right: 1px solid #2c2c2c;
+  }
+  
+  .dark-mode .menu a {
+      color: #e0e0e0;
+  }
+  .dark-mode main{
+      background-color: #222;
+  }
+  .dark-mode .menu a:hover {
+      background-color: #2a2a2a;
+      color: #ffffff;
+  }
+  .dark-mode header,
+  .dark-mode .head {
+      background-color: #1f1f1f;
+      border-bottom: 1px solid #333;
+  }
+  
+  .dark-mode .search-box {
+      background-color: #2e2e2e;
+      color: #ffffff;
+      border: 1px solid #444;
+  }
+  
+  .dark-mode .search-box::placeholder {
+      color: #bbbbbb;
+  }
+  
+  
+  .dark-mode select {
+      background-color: #2c2c2c;
+      color: #e0e0e0;
+      border: 1px solid #444;
+      border-radius: 8px;
+      padding: 6px 12px;
+      transition: all 0.2s ease;
+  }
+  
+  .dark-mode button:hover,
+  .dark-mode select:hover {
+      background-color: #8a8787;
+  }
+  .dark-mode .head i,
+  .dark-mode .name{
+    color: black;
+  }
+  .dark-mode .graphs{
+    color: black;
+  }
