@@ -55,7 +55,8 @@ const courseData = {
       maintainAspectRatio: false,
       plugins: {
         legend: {
-          position: 'top'
+          position: 'bottom'
+
         }
       }
     }
@@ -72,7 +73,8 @@ const courseData = {
       events: []
     });
 
-    // calendar.render();
+    calendar.render()
+    
 
     document.getElementById('courseSelect').addEventListener('change', function () {
       const selectedCourse = this.value;
@@ -84,12 +86,14 @@ const courseData = {
       donutChart.data.datasets[0].data = [course.present, course.absent];
       donutChart.update();
       document.querySelector('.course').textContent = selectedCourse;
-      document.querySelector('.Total .p-text').textContent = Total: ${course.present + course.absent};
-      document.querySelector('.pres .p-text').textContent = Present: ${course.present};
-      document.querySelector('.abs .p-text').textContent = Absent: ${course.absent};
+
+      document.querySelector('.Total .p-text').textContent = `Total:${course.present + course.absent}`;
+      document.querySelector('.pres .p-text').textContent = `Present: ${course.present}`;
+      document.querySelector('.abs .p-text').textContent = `Absent: ${course.absent}`;
 
       const percent = ((course.present / (course.present + course.absent)) * 100).toFixed(2);
-      document.querySelector('.percent-t').textContent = Total Percentage: ${percent}%;
+      document.querySelector('.percent-t').textContent = `Total Percentage: ${percent}%`;
+
       const textElement = document.querySelector('.text-t');
       if (percent >= 80) {
         textElement.textContent = "Great job! Keep it up!";
@@ -139,10 +143,13 @@ const courseData = {
   
   document.addEventListener('DOMContentLoaded', () => {
     applyThemeFromStorage();
+
   
     const settingsToggle = document.getElementById('darkModeToggle');
     if (settingsToggle) {
       settingsToggle.addEventListener('change', () => toggleTheme(true));
     }
   }
+
   );
+
