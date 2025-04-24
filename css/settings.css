@@ -279,6 +279,12 @@ hr {
     width: 90%;
 }
 
+.settings {
+    margin: 20px;
+    height: 100vh;
+}
+
+
 
 .set-h {
     display: flex;
@@ -294,9 +300,7 @@ hr {
     border-radius: 10px;
     border: transparent;
 }
-.settings{
-    margin: 20px;
-}
+
 .slider {
     position: absolute;
     cursor: pointer;
@@ -334,6 +338,79 @@ input:checked + .slider:before {
     display: inline-block;
     width: 50px;
     height: 28px;
+
+
+.additional-settings {
+    border-radius: 12px;
+    margin-top: 20px;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    
+  }
+  
+  .additional-settings h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #111;
+    font-weight: 600;
+  }
+  
+  .setting-group {
+    margin-bottom: 30px;
+  }
+  
+  .setting-group h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #222;
+    font-weight: 500;
+  }
+  
+  .setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  .setting-item select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .export-btn {
+    background-color: #4bad42;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .danger-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 22px;
   }
   
   .switch input {
@@ -350,6 +427,7 @@ input:checked + .slider:before {
     right: 0;
     bottom: 0;
     background-color: #ccc;
+
     transition: 0.4s;
     border-radius: 34px;
   }
@@ -357,6 +435,7 @@ input:checked + .slider:before {
   .slider:before {
     position: absolute;
     content: "";
+
     height: 20px;
     width: 20px;
     left: 4px;
@@ -490,7 +569,16 @@ input:checked + .slider:before {
     background-color: #26a541;
     color: white;
   }
-  .account {
+  
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  
+  .additional-settings span{
+    color: darkgray;
+  }
+
+ .account {
     padding: 1.5rem;
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
