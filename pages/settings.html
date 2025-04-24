@@ -34,8 +34,9 @@
             <div class="nav-item" onclick="window.location.href='mentor.html'"><i
                     class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i
                     class="fa-solid fa-arrow-right"></i></div>
-            <div class="nav-item" onclick="window.location.href='attendence.html'"><i
+            <div class="nav-item" onclick="window.location.href='attendance.html'"><i
                     class="fa-solid fa-chart-bar"></i><span>Attendance</span><i class="fa-solid fa-arrow-right"></i>
+
             </div>
             <div class="nav-item" onclick="window.location.href='settings.html'"> <i
                     class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
@@ -116,6 +117,61 @@
                 <button>Update Profile</button>
             </div>
         </div>
+           <div class="additional-settings tab-section" id="additional" style = "display:none;">
+            <span>Additional Settings</span>
+          
+
+            <div class="setting-group">
+              <h4>Theme & Display</h4>
+              <div class="setting-item">
+                <span>Dark Mode</span>
+                <label class="switch">
+                  <input type="checkbox" id="darkModeToggle">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="setting-item">
+                <span>Font Size</span>
+                <select>
+                  <option>Small</option>
+                  <option selected>Medium</option>
+                  <option>Large</option>
+                </select>
+              </div>
+            </div>
+          
+            <div class="setting-group">
+              <h4>Reminders</h4>
+              <div class="setting-item">
+                <span>Daily Attendance Reminder</span>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="setting-item">
+                <span>Weekly Summary Emails</span>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          
+           
+            <div class="setting-group">
+              <h4>Data & Privecy</h4>
+              <div class="setting-item">
+                <span>Export My Attendance Data</span>
+                <button class="export-btn">Download</button>
+              </div>
+              <div class="setting-item">
+                <span>Delete My Account</span>
+                <button class="danger-btn">Delete</button>
+              </div>
+            </div>
+          </div>
+           
           <div class="notifications tab-section" id="notification" style="display: none;">
             <div class="general"><div class="n-text"><span>Enable All Notifications </span></div><div class="n-btn"><label class="switch">
                 <input type="checkbox" checked>
@@ -181,6 +237,7 @@
                       </label></div>
                 </div>
             </div>
+
             <div class="dnd-section">
                 <div class="general"><div class="n-text"><span>Do Not Disturb</span></div><div class="n-btn"><label class="switch">
                     <input type="checkbox" checked>
@@ -209,6 +266,7 @@
               </div>
               
         </div>
+
         </div>
     </main>
    
