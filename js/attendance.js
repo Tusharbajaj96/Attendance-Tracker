@@ -55,7 +55,6 @@ const courseData = {
       maintainAspectRatio: false,
       plugins: {
         legend: {
-attendance
           position: 'bottom'
 
         }
