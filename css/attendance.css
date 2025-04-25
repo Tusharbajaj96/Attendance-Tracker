@@ -637,3 +637,6 @@ body.dark-mode{
   .dark-mode .graphs{
     color: black;
   }
+  .dark-mode .notification-box{
+    color: #151515;
+  }
