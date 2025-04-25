@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/mentor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+</head>
+
+<body>
+    <header>
+        <div class="nav-brand">
+            <img src="a simple modern design with a white background and a small colored icon logo for Academix.png"
+                alt="img" class="logo">
+            Academix
+        </div>
+
+        <h4>Menu</h4>
+        <div class="nav-container">
+
+            <div class="nav-item" onclick="window.location.href='index.html'"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item" onclick="window.location.href='pages/student.html'"><i class="fa-solid fa-user"></i><span>Student Profile</span><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item" onclick="window.location.href='pages/mentor.html'"><i class="fa-solid fa-chalkboard-teacher"></i><span>Mentor Info</span><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item" onclick="window.location.href='pages/attendence.html'"><i class="fa-solid fa-chart-bar"></i><span>Attendance</span><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item" onclick="window.location.href='pages/settings.html'"> <i class="fa-solid fa-cog"></i><span>Settings</span><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="nav-item logout"><i class="fa-solid fa-sign-out-alt"></i><span>Log Out</span><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+
+    </header>
+    <main>
+        <div class="head">
+            <div class="menu-item">Mentor Info<br>
+                <span class="date">18 March, 2025</span>
+            </div>
+            <img src="/images/a simple modern design with a white background and a small colored icon logo for Academix.png"
+                alt="img" class="head-logo">
+            <div class="search">
+                <div class="btn"><i class="fas fa-search search-btn"></i></div></i><input type="search"
+                    placeholder="Search anything" class="search-box">
+                <div class="voice"><i class="fa-solid fa-microphone voice-btn"></i></div>
+            </div>
+            <div class="person-info">
+                <div class="mode" onclick="toggleTheme()"><i class="fa-regular fa-sun page-mode"></i><i class="fa-solid fa-moon page-mode"></i>
+                </div>
+                <div class="bell-icon" id="bell-box"><i class="fa-solid fa-bell"></i></div>
+                <div class="info"><img src="/images/person-logo.jpg" alt="" class="person-img"> <span
+                        class="name">Radhika</span> <br> <span class="status">Web
+                        Developer</span></div>
+            </div>
+        </div>
+        <div class="mentor-head">
+            <span class="m-info">Mentor's Information</span>
+        </div>
+        <div class="mentor-info">
+            <div class="men-img">
+                <div class="img">
+                    <img src="/images/mentorimg.jpeg" alt="" class="m-img">
+                </div>
+                <div class="men-name">
+                    <div class="mentor-name">
+                        <span class="m-name">Jannie Regel</span><br>
+                    </div>
+                    <div class="stars">
+                        <i class="far fa-star" data-value="1"></i>
+                        <i class="far fa-star" data-value="2"></i>
+                        <i class="far fa-star" data-value="3"></i>
+                        <i class="far fa-star" data-value="4"></i>
+                        <i class="far fa-star" data-value="5"></i>
+                    </div>
+                    <div class="percent">
+                        <div class="p-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="men-info">
+                <div class="data">
+                    <span class="m-head">
+                        Mentor Information
+                    </span> <br>
+                    <span class="m-sub">Gender:</span> <span class="m-data">Female</span>
+                    <span class="m-sub">Designation:</span><span class="m-data"> Assistant Professor</span>
+                    <span class="m-sub">Department:</span><span class="m-data"> Computer Science</span>
+                    <span class="m-sub">Email:</span><span class="m-data">Jannieregel1234@gmail.com</span>
+                </div>
+                <div class="data">
+                    <span class="m-head">
+                        Academic and Research Details
+                    </span> <br>
+                    <span class="m-sub">Expertise:</span> <span class="m-data">AI & Machine Learning</span>
+                    <span class="m-sub">Subjects:</span><span class="m-data">Data Structures & AI</span>
+                    <span class="m-sub">Research Papers:</span><span class="m-data"> 4 published</span>
+                    <span class="m-sub">Projects:</span><span class="m-data">AI Traffic System, Smart Farming</span>
+                </div>
+                <div class="data"> <span class="m-head">
+                        Mentorship and Guidance
+                    </span> <br>
+                    <span class="m-sub">Current Supervisions:</span> <span class="m-data">AI Chatbot & IoT
+                        Security</span>
+                    <span class="m-sub">Industry Links:</span><span class="m-data">IBM, Microsoft</span>
+                    <span class="m-sub">Thesis Guided:</span><span class="m-data"> 2 Master's, 1 Ph.D</span>
+                </div>
+                <div class="data"> <span class="m-head">
+                        Contact-Information
+                    </span> <br>
+                    <span class="m-sub">Contact Number:</span> <span class="m-data">89765-XXXXX</span>
+                    <span class="m-sub">Office:</span><span class="m-data">Room: 204 Turing Block, Computer Science
+                        department</span>
+                </div>
+            </div>
+        </div>
+        <section class="mentor-con">
+            <div class="contact-form">
+                <div class="contact-head">
+                    <span class="contact">Contact Form</span>
+                </div>
+                <div class="contact-sub">
+                    <span class="mail-text"> Email Id:
+                    </span>
+                    <input type="email" class="mail"> <br>
+                    <textarea name="query" id="query" placeholder="Write the Reason"></textarea>
+                </div>
+                <div class="contact-btn">
+                    <button>SEND</button>
+                </div>
+                </div>
+                <div class="upcoming-events">
+                    <div class="st-head">
+                    <div class="up-head1" id="query" onclick="ShowContent('st-query')">
+                        Student Queries & FAQs
+                    </div>
+                    <div class="up-head1" id="feedback" onclick="ShowContent('st-feedback')">
+                        Add a Feedback
+                    </div>
+                    </div>
+                    <div class="up-sub" id="st-query">
+                    <div class="ques"><span class="question"> 1.How can I contact the mentor? </span><br>
+                        <span class="ans"><i class="fa fa-arrow-right"></i> Email or visit during office hours.</span>
+                    </div>
+                    <div class="ques"><span class="question">2. Can I schedule a 1-on-1 session? </span><br>
+                       <span class="ans"> <i class="fa fa-arrow-right"></i>Yes, use the "Schedule a Meeting" option.</span></div>
+                    <div class="ques"><span class="question">3. What topics can the mentor help with?</span> <br>
+                        <span class="ans"><i class="fa fa-arrow-right"></i> AI, Machine Learning, Research, Project Guidance</span>
+    
+                    </div>
+                    <div class="query-btn">
+                        <button>Add your Query</button>
+                    </div>
+                    </div>
+                    <div class="up-sub2" id="st-feedback">
+                        <div class="feedback-h"><span class="sub-head">Write a Feedback</span></div>
+                        <div class="feedback-sub"><textarea name="feedback"placeholder="Write your Feedback" class="feedback-box"></textarea></div>
+                        <div class="feedback-btn">
+                            <button>Add the feedback</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+</body>
+

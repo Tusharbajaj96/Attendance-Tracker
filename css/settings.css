@@ -434,12 +434,271 @@
   
   .head-logo {
     display: none;
+}
+
+hr {
+    width: 90%;
+}
+
+.settings {
+    margin: 20px;
+    height: 100vh;
+}
+
+
+.set-h {
+    display: flex;
+    margin: 10px 8px;
+}
+
+.set-h button {
+    margin: 10px;
+    background-color: black;
+    color: white;
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border: transparent;
+}
+
+.additional-settings {
+    border-radius: 12px;
+    margin-top: 20px;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    
   }
   
-  @media (max-width:1188px) {
-    .edit-div {
-      height: 30px;
-      justify-content: flex-start;
+  .additional-settings h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #111;
+    font-weight: 600;
+  }
+  
+  .setting-group {
+    margin-bottom: 30px;
+  }
+  
+  .setting-group h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #222;
+    font-weight: 500;
+  }
+  
+  .setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  .setting-item select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .export-btn {
+    background-color: #4bad42;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .danger-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 22px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #26a541;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  
+  .additional-settings span{
+    color: darkgray;
+  }
+
+ .account {
+    padding: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow-y: hidden;
+  }
+  
+  .acc-h {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .acc-img {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .acc-img img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  
+  .acc-img button {
+    padding: 0.6rem 1rem;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .acc-img button:hover {
+    background-color: #2980b9;
+  }
+  
+  .acc-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top:10px ;
+  }
+  
+  .p-info {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+  }
+  
+  .p-info span {
+    font-weight: 500;
+    display: block;
+    color: #555;
+    margin-bottom: 0.3rem;
+  }
+  
+  .info-div {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .acc-bio {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .acc-bio span {
+    font-weight: 500;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bio-box {
+    width: 95%;
+    min-height: 100px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .update {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .update button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #27ae60;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update button:hover {
+    background-color: #1e8449;
+  }
+  
+
+@media (max-width: 800px) {
+    header {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
     }
   
   }
