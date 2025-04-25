@@ -65,7 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const fields = document.querySelectorAll('.info-div, .bio-box');
   
     fields.forEach((field, index) => {
-      const saved = localStorage.getItem(field${index});
+      const saved = localStorage.getItem(`field${index}`);
       if (saved !== null) {
         field.innerText = saved;
       }
@@ -83,7 +83,7 @@ window.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".update button:nth-child(2)").addEventListener("click", function () {
     const fields = document.querySelectorAll('.info-div, .bio-box');
     fields.forEach((field, index) => {
-      localStorage.setItem(field${index}, field.innerText.trim());
+      localStorage.setItem(`field${index}`, field.innerText.trim());
       field.contentEditable = false;
       field.classList.remove('editing');
     });
@@ -91,4 +91,3 @@ window.addEventListener("DOMContentLoaded", () => {
     alert("Profile updated and saved!");
   });
 
-ye js ki file hai settings.js
