@@ -337,9 +337,9 @@ input:checked + .slider:before {
     position: relative;
     display: inline-block;
     width: 50px;
-    height: 28px;
+    height:40px;
 
-
+}
 .additional-settings {
     border-radius: 12px;
     margin-top: 20px;
@@ -838,7 +838,7 @@ input:checked + .slider:before {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 420px){
     .name {
         display: none;
     }
@@ -868,4 +868,4 @@ input:checked + .slider:before {
     .head-logo {
         width: 10%;
     }
-}
+  }
