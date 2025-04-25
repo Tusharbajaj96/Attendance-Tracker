@@ -446,6 +446,7 @@ hr {
 }
 
 
+
 .set-h {
     display: flex;
     margin: 10px 8px;
@@ -461,6 +462,47 @@ hr {
     border: transparent;
 }
 
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #28a745;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height:40px;
+}
+
+
+}
 .additional-settings {
     border-radius: 12px;
     margin-top: 20px;
@@ -548,24 +590,147 @@ hr {
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    transition: .4s;
-    border-radius: 22px;
+
+    transition: 0.4s;
+    border-radius: 34px;
   }
   
   .slider:before {
     position: absolute;
     content: "";
-    height: 16px;
-    width: 16px;
+
+    height: 20px;
+    width: 20px;
     left: 4px;
-    bottom: 3px;
+    bottom: 4px;
     background-color: white;
-    transition: .4s;
+    transition: 0.4s;
     border-radius: 50%;
   }
   
   input:checked + .slider {
+    background-color: green;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(22px);
+  }
+  .general{
+    display: flex;
+    justify-content: space-between;
+  }
+  .n-btn{
+    margin-right: 40px;
+  }
+  .n-text{
+    font-size: 1.2vw;
+  }
+  .n-sub{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .n-type{
+    width: 30%;
+    font-size: 1vw;
+  }
+  .types{
+    margin-top: 30px;
+  }
+  .types span{
+    font-size: 1.2vw;
+    color: darkgray;
+
+  }
+  .mail-c{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    font-size: 1vw;
+  }
+  .push-c{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+  }
+  .dnd-section {
+    background-color: #f3f6f5;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 40px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+  }
+  
+  .dnd-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #222;
+    font-weight: 600;
+  }
+  
+  .dnd-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .dnd-toggle label {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .dnd-time {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .dnd-time label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #555;
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .dnd-time input[type="time"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white;
+  }
+  
+  .dnd-days {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .dnd-days .day {
+    padding: 8px 12px;
+    background-color: #e0e0e0;
+    color: #333;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+    user-select: none;
+  }
+  
+  .dnd-days .day.selected {
     background-color: #26a541;
+    color: white;
   }
   
   input:checked + .slider:before {
@@ -582,7 +747,6 @@ hr {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    overflow-y: hidden;
   }
   
   .acc-h {
@@ -691,6 +855,156 @@ hr {
     background-color: #1e8449;
   }
   
+  .security {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.sec-head {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.sec-p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sec-p .pass {
+    font-size: 1rem;
+    color: #888;
+    letter-spacing: 2px;
+}
+
+.sec-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sec-btn:hover {
+    background-color: #0056b3;
+}
+
+.two-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.two-sub span {
+    color: #888;
+    font-size: 1rem;
+}
+
+.two-sub button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.two-sub button:hover {
+    background-color: #218838;
+}
+
+.sec-l {
+    margin-top: 20px;
+}
+
+.act {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lap i {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.device {
+    flex: 1;
+    color: #555;
+}
+
+.time {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.sec-btn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sec-btn:hover {
+    background-color: #c82333;
+}
+
+.email-v, .phone-v {
+    margin-top: 20px;
+}
+
+.mail-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mail-box .email {
+    color: #555;
+    font-size: 1rem;
+}
+
+.mail-box .sec-btn {
+    background-color: #ffc107;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+}
+
+.mail-box .sec-btn:hover {
+    background-color: #e0a800;
+}
+
+
 
 @media (max-width: 800px) {
     header {
@@ -855,9 +1169,10 @@ hr {
     .head-logo {
       width: 8%;
     }
+
   }
   
-  @media (max-width: 395px) {
+@media (max-width: 420px){
     .name {
       display: none;
     }
@@ -1058,4 +1373,5 @@ hr {
   }
   .dark-mode .notification-box{
     color: black;
+
   }
