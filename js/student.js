@@ -1,5 +1,5 @@
 const bell = document.getElementById('bell-box');
-const notify = document.getElementById('notify-Box');
+const notify = document.getElementById('notify-box');
 bell.addEventListener("click", () => {
 notify.classList.toggle("show");
 });
